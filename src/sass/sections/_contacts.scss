@@ -7,3 +7,10 @@
   background-color: palegreen;
   border: 1px solid black;
 }
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
