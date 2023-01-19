@@ -1,2 +1,2 @@
-import './js/gallery-swiper';
-import './js/reviews-swiper';
+import './partials/js/gallery-swiper';
+import './partials/js/reviews-swiper';
