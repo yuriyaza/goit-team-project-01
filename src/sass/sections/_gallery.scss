@@ -1,9 +1,13 @@
-// Приклад для CSS
-// Нижче добавляємо свої класи
-
 .gallery {
   width: 500px;
-  height: 50px;
+  height: 450px;
   background-color: skyblue;
   border: 1px solid black;
+}
+.gallery-swiper {
+  width: 280px;
+  height: 130px;
+}
+.gallery-swiper-img{
+  border-radius: 8px;
 }
