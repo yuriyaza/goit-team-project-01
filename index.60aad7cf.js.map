@@ -1,0 +1,1 @@
+{"mappings":"AAAA,IAAIA,OAAS,IAAIC,OAAO,kBAAmB,CACzCC,WAAY,CACVC,GAAI","sources":["src/partials/js/reviews-swiper.js"],"sourcesContent":["var swiper = new Swiper('.reviews-swiper', {\n  pagination: {\n    el: '.swiper-pagination',\n  },\n});\n"],"names":["swiper","Swiper","pagination","el"],"version":3,"file":"index.60aad7cf.js.map"}
