@@ -1,9 +1,28 @@
 /* Базові стилі (загальні для всіх) */
 
+:root {
+  --color-salt: #84a178;
+  --color-light-salt: #aec6a5;
+  --color-yellow: #efd478;
+  --color-brown: #d6936d;
+  --color-sand: rgba(248, 210, 78, 0.1);
+
+  --color-button-green: #0a8817;
+  --color-button-yellow: #f8d24e;
+  --color-button-gray: #ababab;
+
+  --color-text-dark: #131313;
+  --color-text-white: #fcfcfc;
+
+  --transition-rule: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-rule-modal: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   line-height: 1.62;
+  color: var(--color-text-dark);
 }
 
 h1,
