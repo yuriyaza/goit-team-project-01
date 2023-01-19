@@ -42,23 +42,22 @@ img {
   overflow: hidden;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: scroll;
-  background-color: rgba(46, 47, 66, 0.4);
-  visibility: visible;
-  opacity: 1;
-  scale: 1;
-  transition: visibility var(--trans-modal), opacity var(--trans-modal), scale var(--trans-modal);
+.container {
+  max-width: 480px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  scale: 1.1;
-  pointer-events: none;
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    max-width: 100%;
+  }
 }
