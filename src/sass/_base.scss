@@ -1,0 +1,64 @@
+/* Базові стилі (загальні для всіх) */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 1.62;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--color-slate);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  background-color: rgba(46, 47, 66, 0.4);
+  visibility: visible;
+  opacity: 1;
+  scale: 1;
+  transition: visibility var(--trans-modal), opacity var(--trans-modal), scale var(--trans-modal);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  scale: 1.1;
+  pointer-events: none;
+}

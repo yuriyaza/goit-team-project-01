@@ -1,2 +1,19 @@
 @import './common';
-@import './example';
+@import './base';
+
+@import './header';
+
+@import './sections/hero';
+@import './sections/products';
+@import './sections/about';
+@import './sections/gallery';
+@import './sections/reviews';
+@import './sections/contacts';
+
+@import './footer';
+
+@import './modals/product-card';
+@import './modals/ingredients';
+@import './modals/read-more';
+@import './modals/location';
+@import './modals/franchise';
