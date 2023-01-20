@@ -1,9 +1,131 @@
-// Приклад для CSS
-// Нижче добавляємо свої класи
 
 .contacts {
-  width: 500px;
-  height: 50px;
-  background-color: palegreen;
-  border: 1px solid black;
+  position: relative;
+  background-color: var(--color-salt);
+}
+.contacts-items {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  position: absolute;
+  background-color: var(--color-text-white);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+.city,
+.adress-cafe
+.day,
+.time,
+.phone,
+.mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: var(--color-text-dark);
+}
+.adress-cafe {
+  color: var(--color-brown);
+}
+.day,
+.phone,
+.mail  {
+  color: var(--color-text-dark);
+}
+.time {
+  color:var(--color-button-gray);
+}
+
+
+@media screen and (min-width: 320px) {
+  .contacts-items {
+    width: 280px;
+    height: 412px;
+    top: -353px;
+    padding-left: 32px;
+  }
+  .category {
+    min-width: 80px;
+    height: 22px;
+    margin-bottom: 20px;
+    background-color: var(--color-button-yellow);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--color-text-dark);
+  }
+}
+@media screen and (min-width: 480px) {
+  .contacts-items {
+    top: -349px; 
+ }
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .contacts-items {
+    flex-basis: calc((100% - 32px) / 3); 
+    min-width: 224px;
+    height: 537px;
+  } 
+}
+@media screen and (min-width: 768px) {
+  .category {
+    min-width: 73px;
+    height: 30px;
+    margin-bottom: 32px;
+    line-height: 1.4;
+    border-radius: 6px;
+  }
+  .contacts-items {
+    padding-bottom: 40px;
+    padding-left: 24px;
+    top: -299px;
+  }
+  .city,
+  .adress-cafe
+  .day,
+  .time,
+  .phone,
+  .mail {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contacts-items {
+    flex-basis: calc((100% - 64px) / 3); 
+    width: 368px;
+    height: 542px;
+    top: -128px;
+    padding-left: 40px;
+    background: #FFFFFF;
+  } 
+  .city,
+  .adress-cafe,
+  .day,
+  .time,
+  .phone,
+  .mail {
+    font-size: 16px;
+  }
 }
