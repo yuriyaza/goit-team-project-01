@@ -2,15 +2,63 @@
 // Нижче добавляємо свої класи
 
 .contacts {
-  width: 500px;
-  height: 50px;
-  background-color: palegreen;
-  border: 1px solid black;
+  position: relative;
+  background-color: var(--color-salt);
 }
+.contacts-items {
+  position: absolute;
+  background: var(--color-text-white);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+@media screen and (min-width: 320px) {
+  .contacts-items {
+    width: 280px;
+    height: 412px;
+    left: 20px;
+    top: 0px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .contacts-items {
+    left: 100px;
+    top: 428px; 
+    }
+  }
 @media screen and (max-width: 767px) {
   .contacts {
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .contacts-items {
+    flex-basis: calc((100% - 32px) / 3); 
+    width: 224px;
+    height: 537px;
+    left: 32px;
+    top: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contacts-items {
+    flex-basis: calc((100% - 64px) / 3); 
+    width: 368px;
+    height: 542px;
+    left: 816px;
+    top: 0px;
+
+    background: #FFFFFF;
   }
 }
