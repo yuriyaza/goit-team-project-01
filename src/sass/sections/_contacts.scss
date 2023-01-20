@@ -2,11 +2,12 @@
   position: relative;
   background-color: var(--color-salt);
 }
-
+.contacts {
+  position: absolute;
+}
 .contacts-items {
   padding-top: 40px;
   padding-bottom: 24px;
-  position: absolute;
   background-color: var(--color-text-white);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -36,13 +37,48 @@
 .time {
   color:var(--color-button-gray);
 }
-
+.contacts-locations {
+  width: 196px;
+  height: 100%;
+  padding: 12px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 7px;
+  color: var(--color-text-dark);
+  background-color: var(--color-button-yellow);
+  border-radius: 10px;
+}
+.contacts-franchise {
+  width: 196px;
+  height: 100%;
+  padding: 13px 55px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  background-color: var(--color-salt);
+  border: 2px solid var(--color-button-yellow);
+  border-radius: 10px;
+}
 
 @media screen and (min-width: 320px) {
+  .contacts-section {
+    padding-top: 935px;
+    padding-bottom: 30px;
+  }
+  .contacts{
+    top: -353px;
+  }
   .contacts-items {
     width: 280px;
     height: 412px;
-    top: -353px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -50,6 +86,10 @@
     min-width: 80px;
     height: 22px;
     margin-bottom: 20px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     background-color: var(--color-button-yellow);
     border-radius: 4px;
     font-style: normal;
@@ -67,16 +107,21 @@
   .phone {
     margin-bottom: 6px;
   }
-  .time {
-    margin-bottom: 8px;
-  }
+  
   .hr {
     border: 1px solid #E1E1E1;
-
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .form-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
   }
 }
 @media screen and (min-width: 480px) {
-  .contacts-items {
+  .contacts {
     top: -349px; 
  }
 }
@@ -89,6 +134,10 @@
   
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-section {
+    padding-top: 278px;
+    padding-bottom: 20px;
+  }
   .contacts {
     display: flex;
     flex-wrap: wrap;
@@ -104,15 +153,19 @@
   .category {
     min-width: 73px;
     height: 30px;
+    padding-left: 14px;
+    padding-right: 14px;
     margin-bottom: 32px;
     line-height: 1.4;
     border-radius: 6px;
+  }
+  .contacts {
+    top: -299px;
   }
   .contacts-items {
     padding-bottom: 40px;
     padding-left: 24px;
     padding-right: 24px;
-    top: -299px;
   }
   .city,
   .adress-cafe
@@ -129,8 +182,22 @@
   .phone {
     margin-bottom: 4px;
   }
+  .hr {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .contacts-section {
+    padding-top: 474px;
+    padding-bottom: 60px;
+  }
   .contacts {
     display: flex;
     align-items: center;
