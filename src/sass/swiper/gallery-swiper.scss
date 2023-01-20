@@ -1,9 +1,12 @@
-/* Стандартні класи слайдера */
-/* Оформлення можна змінювати */
+.gallery{
+  height: 1037px;
+  background-color: aqua;
+  // background-image: url(../images/mobile/background-mobile/Background-mobile-min.jpg);
+}
 
 .swiper {
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
   border: 1px solid black;
 }
 
