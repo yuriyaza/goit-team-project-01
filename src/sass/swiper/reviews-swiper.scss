@@ -1,11 +1,13 @@
 /* Стандартні класи слайдера */
 /* Оформлення можна змінювати */
 
-.swiper {
-  width: 100%;
-  height: 100%;
-  border: 1px solid black;
-}
+// Конфліктує з класами в gallery-swiper.scss (Павло)
+// По цій причині вимкнено
+// .swiper {
+//   width: 100%;
+//   height: 100%;
+//   border: 1px solid black;
+// }
 
 .swiper-slide {
   text-align: center;
