@@ -1,5 +1,3 @@
-// Приклад для CSS
-// Нижче добавляємо свої класи
 
 .contacts {
   position: relative;
@@ -30,6 +28,12 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+  .category {
+    min-width: 80px;
+    height: 22px;
+    background: #F8D24E;
+    border-radius: 4px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
