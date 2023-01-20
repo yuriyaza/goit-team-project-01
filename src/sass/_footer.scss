@@ -1,10 +1,17 @@
 // Приклад для CSS
 // Нижче добавляємо свої класи
 
+@media screen and { min-width: 320px;
+  
+}
 .footer {
   width: 500px;
   height: 50px;
   margin-bottom: 30px;
   background-color:bisque;
   border: 1px solid black;
+}
+.group39{
+  width: 234px;
+  height: 134px;
 }
