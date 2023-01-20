@@ -1,9 +1,135 @@
-// Приклад для CSS
-// Нижче добавляємо свої класи
-
 .hero {
-  width: 500px;
-  height: 50px;
-  background-color: moccasin;
-  border: 1px solid black;
+  display: block;
+  width: auto;
+  background-color: #84a178;
+  height: 453px;
+  padding-top: 40px;
+
+  padding-right: 20px;
+}
+.hero-wraper {
+  height: 413px;
+  position: relative;
+}
+
+.hero-title {
+  width: 247px;
+  height: 97px;
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 32px;
+  margin-right: 0;
+}
+.hero-title-upper {
+  font-size: 34px;
+  line-height: 96.5%;
+}
+.hero_button-products {
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  color: #000000;
+  padding: 11px 26px;
+  margin-right: 12px;
+}
+.hero_button-about {
+  background-color: transparent;
+  border: none;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #f8d24e;
+}
+
+.hero_button-about:hover {
+  color: #0a8817;
+}
+.hero_button-about:focus {
+  color: #fcfcfc;
+}
+
+.hero_button-products:hover,
+.hero_button-products:focus {
+  border-color: #0a8817;
+}
+
+.hero_main-img {
+  position: absolute;
+  width: 177px;
+  bottom: 0;
+  left: 83px;
+}
+.hero_dots-img {
+  position: absolute;
+  width: 320px;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    height: 415px;
+  }
+  .hero-wraper {
+    height: 375px;
+  }
+  .hero_main-img {
+    width: 218px;
+    left: auto;
+    right: 20px;
+  }
+  .hero_dots-img {
+    width: 330px;
+    left: auto;
+    right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 14px;
+  }
+  .hero-wraper {
+    height: 401px;
+  }
+  .hero_main-img {
+    width: 268px;
+    left: auto;
+    right: 20px;
+  }
+  .hero_dots-img {
+    width: 768px;
+    left: auto;
+    right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 591px;
+    padding-top: 45px;
+  }
+  .hero-wraper {
+    height: 546px;
+  }
+  .hero_main-img {
+    width: 456px;
+    left: auto;
+    right: 92px;
+  }
+  .hero_dots-img {
+    width: 1200px;
+    left: auto;
+    right: 0;
+  }
 }
