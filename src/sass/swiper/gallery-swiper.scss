@@ -1,15 +1,3 @@
-.gallery{
-  height: 1037px;
-  background-color: aqua;
-  // background-image: url(../images/mobile/background-mobile/Background-mobile-min.jpg);
-}
-
-.swiper {
-  // width: 100%;
-  // height: 100%;
-  border: 1px solid black;
-}
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -34,4 +22,29 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.gallery-swiper {
+  width: 280px;
+  height: 130px;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 480px) {
+  .gallery-swiper {
+    width: 440px;
+    height: 204px;    
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-swiper {
+    width: 704px;
+    height: 327px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-swiper {
+    width: 1013px;
+    height: 422px;
+  }
 }

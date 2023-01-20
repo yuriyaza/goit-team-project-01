@@ -1,20 +1,39 @@
-<section class="gallery">
-
+<section class="gallery container">
+  <!-- <div class="container"> -->
   <div class="swiper mySwiper gallery-swiper">
-    <div class="swiper-wrapper ">
+    <div class="swiper-wrapper">
       <div class="swiper-slide ">
-        <img class="gallery-swiper-img" src='../images/mobile/slide-up/slide-mob280-min.jpg' alt="">
+        <picture>
+          <source media="(max-width: 479px)" srcset='../images/mobile/slide-up/slide-mob280-min.jpg'>
+          <source media="(max-width: 767px)" srcset='../images/mobile/slide-up/slide-mob440-min.jpg'>
+          <source media="(max-width: 1199px)" srcset='../images/tablet/slide-up/slide-tablet-min.jpg'>
+          <source media="(min-width: 1200px)" srcset='../images/desktop/slide-up/slide-desk-min.jpg'>
+          <img src='../images/mobile/slide-up/slide-mob280-min.jpg' alt="">
+        </picture>
       </div>
       <div class="swiper-slide">
-        <img src='../images/mobile/slide-up/slide-mob280-min.jpg' alt="">
+        <picture>
+          <source media="(max-width: 479px)" srcset='../images/mobile/slide-up/slide-mob280-2-min.jpg'>
+          <source media="(max-width: 767px)" srcset='../images/mobile/slide-up/slide-mob440-2-min.jpg'>
+          <source media="(max-width: 1199px)" srcset='../images/tablet/slide-up/slide-tablet2-min.jpg'>
+          <source media="(min-width: 1200px)" srcset='../images/desktop/slide-up/slide-desk2-min.jpg'>
+          <img src='../images/mobile/slide-up/slide-mob280-2-min.jpg' alt="">
+        </picture>
       </div>
       <div class="swiper-slide">
-        <img src='../images/mobile/slide-up/slide-mob280-min.jpg' alt="">
+        <picture>
+          <source media="(max-width: 479px)" srcset='../images/mobile/slide-up/slide-mob280-2-min.jpg'>
+          <source media="(max-width: 767px)" srcset='../images/mobile/slide-up/slide-mob440-2-min.jpg'>
+          <source media="(max-width: 1199px)" srcset='../images/tablet/slide-up/slide-tablet3-min.jpg'>
+          <source media="(min-width: 1200px)" srcset='../images/desktop/slide-up/slide-desk3-min.jpg'>
+          <img src='../images/mobile/slide-up/slide-mob280-min.jpg' alt="">
+        </picture>
+        <!-- <img src='../images/mobile/slide-up/slide-mob280-3-min.jpg' alt=""> -->
       </div>
     </div>
     <!-- <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div> -->
-  </div>      
+  </div>
 
-
+  <!-- </div> -->
 </section>
