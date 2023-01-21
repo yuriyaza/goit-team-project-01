@@ -18,6 +18,7 @@
   font-size: 18px;
   line-height: 1.2;
   color: #FCFCFC;
+  margin-bottom: 16px;
 }
 .passion {
   font-weight: 700;
@@ -26,8 +27,12 @@
   color: #FCFCFC;
 }
 .social_media_mobile_footer_icons {
+  display: flex;
   margin-left: 158px;
   margin-top: 164px;
+}
+.social_media_mobile_footer_icon{
+  gap: 20px;
 }
 .mobile_contact_footer {
   margin-left: 56;
