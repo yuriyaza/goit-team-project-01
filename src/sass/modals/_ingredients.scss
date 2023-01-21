@@ -10,7 +10,7 @@
   margin-right: auto;
 
   background-color: #fcfcfc;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--color-button-yellow);
   border-radius: 10px;
 }
 
@@ -27,7 +27,7 @@
   top: 12px;
   right: 12px;
 
-  color: #131313;
+  color: var(--color-text-dark);
 }
 
 .modal-ingredients-button-close-svg {
@@ -71,7 +71,7 @@
   height: 132px;
 
   border-radius: 50%;
-  background-color: #f8d24e;
+  background-color: var(--color-button-yellow);
 }
 .modal-ingredients-value-list {
   display: flex;
@@ -158,7 +158,7 @@
   display: block;
   height: 42px;
 
-  background: #f8d24e;
+  background: var(--color-button-yellow);
   border-radius: 10px;
   border: none;
 
@@ -169,19 +169,19 @@
   line-height: 1.214;
   color: #131313;
 
-  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: background-color var(--transition-rule);
 }
 
 .modal-ingredients-form-button:hover {
-  background-color: #0a8817;
+  background-color: var(--color-button-green);
 }
 
 .modal-ingredients-form-button:focus {
-  background-color: #0a8817;
+  background-color: var(--color-button-green);
 }
 
 .modal-ingredients-form-button:disabled {
-  background-color: #ababab;
+  background-color: var(--color-button-gray);
 }
 
 .modal-ingredients-form > input,
