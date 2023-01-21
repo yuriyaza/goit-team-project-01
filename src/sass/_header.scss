@@ -2,8 +2,11 @@
 // Нижче добавляємо свої класи
 
 .page-header {
-  width: 500px;
-  height: 50px;
-  background-color: powderblue;
-  border: 1px solid black;
+ padding-top: 8px;
+ padding-bottom: 0;
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
