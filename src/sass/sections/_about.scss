@@ -1,9 +1,186 @@
-// Приклад для CSS
-// Нижче добавляємо свої класи
-
 .about {
-  width: 500px;
+  background-color: var(--color-salt);
+}
+.about-container {
+  padding-top: 61px;
+  padding-bottom: 68px;
+  position: relative;
+}
+.about-label, .about-title, .about-description, .about-item-title, .about-item-desription {
+  color: var(--color-text-white);
+}
+.about-container > label {
+  text-align: center;
+  display: block;
+  margin-bottom: 12px;
+}
+.about-label {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+}
+.about-first-section {
+  margin-bottom: 50px;
+  
+}
+.about-title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 372px;
+  }
+.about-img {
+  width: 280px;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: 240px;
+  left: 20px;
+  right: 20px;
+}
+.about-img > img {
+  height: 100%;
+}
+.description-list {
+  max-width: 220px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.about-description:not(last-child) {
+  margin-bottom: 4px;
+}
+.about-description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.75;
+  text-align: center;
+}
+.about-first-description {
+  letter-spacing: 0.04em;
+}
+.about-second-description, .about-third-description {
+  line-height: 1.58;
+}
+.about-button {
+  width: 164px;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+font-size: 14px;
+line-height: 1.29;
+color: #000000;
+background: var(--color-button-yellow);
+display: flex;
+align-items: center;
+text-align: center;
+gap: 7.75px;
+padding: 12px 37.51px 12px 34px;
+margin: 0 auto;
+}
+.about-first-section {
+  margin-bottom: 50px;
+}
+.about-item {
+  max-width: 230px;
+  margin: 0 auto;
+}
+.about-icon-div {
+  width: 50px;
   height: 50px;
-  background-color: tomato;
-  border: 1px solid black;
+  background-color: var(--color-button-yellow);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.about-icon {
+  fill: var(--color-text-dark);
+}
+.about-item-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  }
+.about-item-desription {
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.66;
+}
+.about-item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 480px) {
+  .about-container {
+    padding-top: 60px;
+    padding-bottom: 81px;
+  }
+  .about-img {
+    left: 100px;
+    right: 100px;
+  }
+  .about-first-section {
+    margin-bottom: 60px;
+  }
+
+  .about-title {
+    font-size: 30px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+  }
+  .about-first-section {
+    margin-bottom: 60px;
+  }
+  
+  .about-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+  }
+
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    padding-bottom: 204px;
+  }
+  .about-label {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+  }
+  .about-title {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.26;
+    letter-spacing: 0.06em;
+    max-width: 454px;
+    margin-bottom: 72px;
+  }
+  .about-icon-div {
+    margin-bottom: 32px;
+  }
+  
+}
+@media screen and (min-width: 1200px) {
+
+  .about-icon-div {
+    margin-bottom: 40px;
+  }
 }
