@@ -83,7 +83,7 @@
     padding-right: 32px;
   }
   .category {
-    min-width: 80px;
+    background-size: auto;
     height: 22px;
     margin-bottom: 20px;
     padding-left: 22px;
@@ -113,12 +113,7 @@
     margin-top: 24px;
     margin-bottom: 24px;
   }
-  .form-button {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 16px;
-  }
+  
 }
 @media screen and (min-width: 480px) {
   .contacts {
@@ -128,10 +123,16 @@
 @media screen and (max-width: 767px) {
   .contacts {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 16px;
   }
-  
+  .form-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-section {
