@@ -1,9 +1,26 @@
-// Приклад для CSS
-// Нижче добавляємо свої класи
-
+.container{
+  background: linear-gradient(to bottom, #84A178 36px, transparent 36px);
+}
 .gallery {
-  width: 500px;
-  height: 50px;
-  background-color: skyblue;
   border: 1px solid black;
+  height: 1090px;
+  background-image: url(../../images/mobile/background-mobile/Backgroud_mobile-min.jpg);  
+}
+
+@media screen and (min-width:480 ){
+  .gallery{
+    height: 1160px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery{
+    background-image: url(../../images/tablet/background-tablet/Background_tablet-min.jpg);
+    height: 1151px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    background-image: url(../../images/desktop/background-desctop/Backgroud_desktop-min.jpg);
+  }
 }
