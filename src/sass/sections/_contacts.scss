@@ -121,8 +121,8 @@
 @media screen and (max-width: 767px) {
   .contacts {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
   }
   .form-button {
