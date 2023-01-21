@@ -1,12 +1,38 @@
-// Приклад для CSS
-// Нижче добавляємо свої класи
-
-// .reviews {
-//   width: 500px;
-//   height: 50px;
-//   background-color: orange;
-//   border: 1px solid black;
-// }
-
+.swiper-slide {  
+  padding: 0;
+  margin: 0 auto;
+  max-width: 280px;
+  text-align: center;
+}
+.reviews-img {
+  display: block;
+  width: 100%; 
+  margin-bottom: 32px;
+}
+.reviews-text {
+  width: 280px;
+  height: 256px;
+  padding: 40px 35px 40px 35px;
+  background: #84A178;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  color: #FCFCFC;
+  margin-bottom: 32px;
+}
+.reviews-name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+  text-align: center;
+  color: #131313;
+  margin-bottom: 12px;
+}
 
 
