@@ -2,11 +2,13 @@
 // Нижче добавляємо свої класи
 
 .modal-product-card {
-  min-width: 280px;
+  width: 280px;
   height: 990px;
   background: #FCFCFC;
   border: 2px solid #F8D24E;
   border-radius: 10px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .form {
@@ -17,13 +19,25 @@
 
 }
 
+.form-field {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.form-label { 
+ position: absolute;
+ top: 50%;
+ left: 30px;
+ transform: translateY(-50%);
+}
+
 .form-input {
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84A178;
   border-radius: 10px;
   width: 224px;
   height: 32px;
-  margin-bottom: 12px;
+  
 }
 
 .form-textarea {
@@ -31,9 +45,80 @@
   border: 1px solid #84A178;
   border-radius: 10px;
   width: 224px;
-  height: 32px;
+  
+}
+
+.check {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  margin-bottom: 82px;
+}
+
+.check-input {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+
+}
+.check-box{
+  display: block;
+  width: 132px;
+  height: 132px;
+  border-color: #84A178;
+  border-radius: 10px;
+  border: 2px solid #96AF8C;
 }
 
 .form-button {
+background: #F8D24E;
+border-radius: 10px;
+width: 114px;
+    height: 40px;
+border: none;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;    
+}
+.product-modal-text { 
+  font-family: 'Seymour One';
+   font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+.cream {
+  position: absolute;
+    top: -40%;
+  
+  background-image: url(../../images/buy-now-modal-produkt-card/kelsey-curtis-min.png);
+  width: 132px;
+  height: 132px;
+}
+
+.coffee{
+  position: absolute;
+    top: -40%;
+  background-image: url(../../images/buy-now-modal-produkt-card/pariwat-pannium-min.png);
+  width: 132px;
+  height: 132px;
+}
+
+.milkshake {
+  position: absolute;
+    top: -40%;
+  background-image: url(../../images/buy-now-modal-produkt-card/victor-rutka-min.png);
+  width: 132px;
+  height: 132px;
+}
+
+.check-input:checked + .check-box {
+  background-color: #96AF8C;
 }
