@@ -1,17 +1,32 @@
 // Приклад для CSS
 // Нижче добавляємо свої класи
-
-@media screen and { min-width: 320px;
-  
-}
 .footer {
-  width: 500px;
-  height: 50px;
-  margin-bottom: 30px;
-  background-color:bisque;
-  border: 1px solid black;
+    background-color: #84A178;
 }
-.group39{
+@media screen and  (min-width: 320px) {
+  
+.group39 {
   width: 234px;
   height: 134px;
+  margin-left: 20px;
+  margin-bottom: 258px;
+}
+.homemade {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #FCFCFC;
+
+}
+.PASSION {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2;
+  color: #FCFCFC;
+}
+.social_media_mobile_footer_icons {
+  margin-left: 158px;
+  margin-bottom: 164px;
+
+}
 }
