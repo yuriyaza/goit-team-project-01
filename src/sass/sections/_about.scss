@@ -10,26 +10,19 @@
   color: var(--color-text-white);
 }
 .about-container > label {
-  text-align: center;
-  display: block;
-  margin-bottom: 12px;
-}
-.about-label {
+    text-align: center;
+    display: block;
+    margin-bottom: 12px;
+    line-height: 22px;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.22;
-    text-align: center;
     text-transform: uppercase;
-}
-.about-first-section {
-  margin-bottom: 50px;
-  
 }
 .about-title {
   font-family: 'Seymour One';
   font-weight: 400;
   font-size: 30px;
-  line-height: 1.26;
+  line-height: 38px;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -51,8 +44,6 @@
   height: 100%;
 }
 .description-list {
-  max-width: 220px;
-  margin: 0 auto;
   margin-bottom: 24px;
 }
 .about-description:not(last-child) {
@@ -61,14 +52,15 @@
 .about-description {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.75;
   text-align: center;
 }
 .about-first-description {
   letter-spacing: 0.04em;
+  line-height: 21px;
+  margin-bottom: 50px;
 }
 .about-second-description, .about-third-description {
-  line-height: 1.58;
+  line-height: 19px;
 }
 .about-button {
   width: 164px;
@@ -76,18 +68,21 @@
   border-radius: 10px;
   border: none;
   font-weight: 600;
-font-size: 14px;
-line-height: 1.29;
-color: #000000;
-background: var(--color-button-yellow);
-display: flex;
-align-items: center;
-text-align: center;
-gap: 7.75px;
-padding: 12px 37.51px 12px 34px;
-margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background: var(--color-button-yellow);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  padding: 12px 34px 12px 34px;
+  margin: 0 auto;
 }
 .about-first-section {
+  margin-bottom: 50px;
+  max-width: 220px;  
+  margin: 0 auto;  
   margin-bottom: 50px;
 }
 .about-item {
@@ -111,7 +106,7 @@ margin: 0 auto;
 .about-item-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.22;
+  line-height: 44px;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -121,7 +116,7 @@ margin: 0 auto;
   text-align: center;
   font-weight: 700;
   font-size: 12px;
-  line-height: 1.66;
+  line-height: 20px;
 }
 .about-item:not(:last-child) {
   margin-bottom: 28px;
@@ -139,48 +134,148 @@ margin: 0 auto;
   .about-first-section {
     margin-bottom: 60px;
   }
-
   .about-title {
     font-size: 30px;
-    line-height: 1.26;
+    line-height: 38px;
     letter-spacing: 0.04em;
   }
-  .about-first-section {
-    margin-bottom: 60px;
-  }
-  
   .about-item:not(:last-child) {
     margin-bottom: 32px;
 }
   }
 
-
 @media screen and (min-width: 768px) {
   .about-container {
     padding-bottom: 204px;
   }
-  .about-label {
+  .about-container > label {
     font-weight: 800;
     font-size: 22px;
-    line-height: 1.23;
+    line-height: 27px;
     letter-spacing: 0.04em;
   }
   .about-title {
     font-weight: 400;
     font-size: 34px;
-    line-height: 1.26;
-    letter-spacing: 0.06em;
+    line-height: 43px;
     max-width: 454px;
-    margin-bottom: 72px;
+    margin-bottom: 80px;
+  }
+  .about-img {
+    top: 214px;
+    left: 32px;
+    right: 406px;
+    margin: 0;
+    width: 330px;
+    height: 356px;
+  }
+  .about-first-section {
+    max-width: 336px;
+    margin-left: 368px;
+    margin-bottom: 80px;
+  }
+  .about-description {
+    text-align: left;
+  }
+  .about-description:not(last-child) {
+    margin-bottom: 8px;
+  }
+  .description-list {
+    
+    margin: 0;
+    margin-bottom: 32px;
+  }
+  .about-second-description {
+    line-height: 21px;
+    letter-spacing: 0.04em;
+  }
+  .about-third-description {
+    line-height: 24.5px;
+    letter-spacing: 0.04em;
   }
   .about-icon-div {
     margin-bottom: 32px;
   }
-  
-}
-@media screen and (min-width: 1200px) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  .about-item {
+    max-width: 152px;
+    margin: 0;
+  }
+  .about-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .about-item-title {
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 12px;
+  }
+  .about-item-desription {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  }
 
+@media screen and (min-width: 1200px) {
+  .about-container {
+    padding-bottom: 178px;
+  }
+  .about-container > label {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .about-title {
+    font-size: 36px;
+    line-height: 45px;
+    max-width: 481px;
+    letter-spacing: .05em;
+    margin-bottom: 172px;
+  }
+  .about-img {
+    top: 236px;
+    left: 16px;
+    right: 693px;
+    width: 491px;
+    height: 529px;
+  }
+  .about-first-section {
+    max-width: 463px;
+    margin-bottom: 146px;
+    margin-left: 600px;
+  }
+  .description-list {
+    margin-bottom: 54px;
+  }
+  .about-first-description {
+    font-size: 16px;
+    line-height: 27.76px;
+  }
+  .about-second-description, .about-third-description {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .about-list {
+    gap: 32px;
+  }
+  .about-item {
+    max-width: 368px;
+  }
   .about-icon-div {
     margin-bottom: 40px;
+  }
+  .about-item-title {
+    font-size: 58px;
+    line-height: 71px;
+  }
+  .about-item-desription {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
   }
 }
