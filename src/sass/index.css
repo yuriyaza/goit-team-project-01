@@ -354,7 +354,7 @@ img {
   line-height: 176%;
   text-align: center;
   letter-spacing: 0.04em;
-  margin-bottom: 114px;
+  margin-bottom: 69px;
 }
 
 @media (min-width: 768px) {
@@ -390,17 +390,28 @@ button {
   margin: 0 auto;
   border: none;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .products-btm {
+  position: absolute;
   width: 40px;
-  height: 1px;
+  height: 2px;
   cursor: pointer;
+  bottom: 24px;
+  left: 135px;
 }
 
+@media (min-width: 480px) {
+  .products-wraper {
+    background-image: url("../../images/mobile/background-mobile/Backgroud_mobile-min.jpg");
+  }
+}
+@media (min-width: 480px) and (min-device-pixel-ratio: 2), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 2dppx), (min-width: 480px) and (min-resolution: 192dpi) {
+  .products-wraper {
+    background-image: url("../../images/mobile/background-mobile/Backgroud_mobile@2x-min.jpg");
+  }
+}
 .products-wraper {
-  background-image: url("../images/mobile/background-mobile/Backgroud_mobile-min.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -454,36 +465,101 @@ button {
   position: absolute;
   background-size: cover;
   background-position: center;
-  transform: translate(50%, -50%);
+  background-repeat: no-repeat;
+  transform: translate(25%, -50%);
   border-radius: 50%;
 }
 
+@media (min-width: 480px) {
+  .products-green::before {
+    background-image: url("../../images/buy-now-modal-produkt-card/kelsey-curtis-min.png");
+  }
+}
+@media (min-width: 480px) and (min-device-pixel-ratio: 2), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 2dppx), (min-width: 480px) and (min-resolution: 192dpi) {
+  .products-green::before {
+    background-image: url("../../images/buy-now-modal-produkt-card/kelsey-curtis@2x-min.png");
+  }
+}
+@media (min-width: 480px) {
+  .products-yellow::before {
+    background-image: url("../../images/buy-now-modal-produkt-card/pariwat-pannium-min.png");
+  }
+}
+@media (min-width: 480px) and (min-device-pixel-ratio: 2), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 2dppx), (min-width: 480px) and (min-resolution: 192dpi) {
+  .products-yellow::before {
+    background-image: url("../../images/buy-now-modal-produkt-card/pariwat-pannium@2x-min.png");
+  }
+}
+@media (min-width: 480px) {
+  .products-orange::before {
+    background-image: url("../../images/buy-now-modal-produkt-card/victor-rutka-min.png");
+  }
+}
+@media (min-width: 480px) and (min-device-pixel-ratio: 2), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 2dppx), (min-width: 480px) and (min-resolution: 192dpi) {
+  .products-orange::before {
+    background-image: url("../../images/buy-now-modal-produkt-card/victor-rutka@2x-min.png");
+  }
+}
 .products-green::before {
-  background-image: url("../images/buy-now-modal-produkt-card/kelsey-curtis-min.png");
-  /* background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9; */
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
 
 .products-yellow::before {
-  background-image: url("../images/buy-now-modal-produkt-card/pariwat-pannium-min.png");
-  /* background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9; */
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 
 .products-orange::before {
-  background-image: url("../images/buy-now-modal-produkt-card/victor-rutka@2x-min.png");
-  /* background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9; */
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 768px) {
   .products-wraper {
-    background-image: url("../images/tablet/background-tablet/Background_tablet-min.jpg");
+    background-image: url("../../images/tablet/background-tablet/Background_tablet-min.jpg");
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx), (min-width: 768px) and (min-resolution: 192dpi) {
+  .products-wraper {
+    background-image: url("../../images/tablet/background-tablet/Background_tablet@2x-min.jpg");
+  }
+}
+@media (min-width: 768px) {
+  .products-green::before {
+    background-image: url("../../images/tablet/Products/kelsey-curtis-tab-min.png");
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx), (min-width: 768px) and (min-resolution: 192dpi) {
+  .products-green::before {
+    background-image: url("../../images/tablet/Products/kelsey-curtis-tab@2x-min.png");
+  }
+}
+@media (min-width: 768px) {
+  .products-yellow::before {
+    background-image: url("../../images/tablet/Products/pariwat-pannium-tab-min.png");
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx), (min-width: 768px) and (min-resolution: 192dpi) {
+  .products-yellow::before {
+    background-image: url("../../images/tablet/Products/pariwat-pannium-tab@2x-min.png");
+  }
+}
+@media (min-width: 768px) {
+  .products-orange::before {
+    background-image: url("../../images/tablet/Products/victor-rutka-tab-min.png");
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx), (min-width: 768px) and (min-resolution: 192dpi) {
+  .products-orange::before {
+    background-image: url("../../images/tablet/Products/victor-rutka-tab@2x-min.png");
+  }
+}
+@media (min-width: 768px) {
+  .products-wraper {
     padding: 60px 0;
   }
   .products-inner {
     display: flex;
     gap: 16px;
+    justify-content: space-between;
   }
   .products-card-green,
 .products-card-yellow,
@@ -496,21 +572,59 @@ button {
   .products-green::before,
 .products-yellow::before,
 .products-orange::before {
-    transform: translate(10%, -50%);
+    transform: translate(5%, -50%);
   }
-  .products-green::before {
-    background-image: url("../images/tablet/Products/kelsey-curtis-tab-min.png");
-  }
-  .products-yellow::before {
-    background-image: url("../images/tablet/Products/pariwat-pannium-tab-min.png");
-  }
-  .products-orange::before {
-    background-image: url("../images/tablet/Products/victor-rutka-tab-min.png");
+  .products-btm {
+    position: absolute;
+    bottom: 20px;
+    left: 92px;
   }
 }
 @media (min-width: 1200px) {
   .products-wraper {
-    background-image: url("../images/desktop/background-desctop/Backgroud_desktop-min.jpg");
+    background-image: url("../../images/desktop/background-desctop/Backgroud_desktop-min.jpg");
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx), (min-width: 1200px) and (min-resolution: 192dpi) {
+  .products-wraper {
+    background-image: url("../../images/desktop/background-desctop/Backgroud_desktop@2x-min.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .products-green::before {
+    background-image: url("../../images/desktop/Products/kelsey-curtis-desk-min.png");
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx), (min-width: 1200px) and (min-resolution: 192dpi) {
+  .products-green::before {
+    background-image: url("../../images/desktop/Products/kelsey-curtis-desk@2x-min.png");
+  }
+}
+@media (min-width: 1200px) {
+  .products-yellow::before {
+    background-image: url("../../images/desktop/Products/pariwat-pannium-desk-min.png");
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx), (min-width: 1200px) and (min-resolution: 192dpi) {
+  .products-yellow::before {
+    background-image: url("../../images/desktop/Products/pariwat-pannium-desk@2x-min.png");
+  }
+}
+@media (min-width: 1200px) {
+  .products-orange::before {
+    background-image: url("../../images/desktop/Products/victor-rutka-desk-min.png");
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx), (min-width: 1200px) and (min-resolution: 192dpi) {
+  .products-orange::before {
+    background-image: url("../../images/desktop/Products/victor-rutka-desk@2x-min.png");
+  }
+}
+@media (min-width: 1200px) {
+  .products-btm {
+    position: absolute;
+    bottom: 67px;
+    left: 165px;
   }
   .products-card-yellow,
 .products-card-orange {
@@ -529,15 +643,9 @@ button {
     display: block;
     width: 302px;
     height: 302px;
-  }
-  .products-green::before {
-    background-image: url("../images/desktop/Products/kelsey-curtis-desk-min.png");
-  }
-  .products-yellow::before {
-    background-image: url("../images/desktop/Products/pariwat-pannium-desk-min.png");
-  }
-  .products-orange::before {
-    background-image: url("../images/desktop/Products/victor-rutka-desk-min.png");
+    top: 0;
+    left: 0;
+    transform: translate(12%, -50%);
   }
 }
 .about {

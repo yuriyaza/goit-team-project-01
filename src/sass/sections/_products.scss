@@ -91,10 +91,12 @@ button {
 }
 
 .products-btm {
- 
+  position:absolute;
   width: 40px;
   height: 2px;
   cursor: pointer;
+  bottom: 24px;
+  left: 135px;
 
   
 }
@@ -220,21 +222,7 @@ button {
     }
   }
 }
-.products-green::before {
-  // background: url("../../images/buy-now-modal-produkt-card/kelsey-curtis-min.png"), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9; 
-  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-}
 
-.products-yellow::before {
-    // background: url("../../images/buy-now-modal-produkt-card/pariwat-pannium-min.png"), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9; 
-  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-}
-
-.products-orange::before {
-   // background: url("../../images/buy-now-modal-produkt-card/victor-rutka@2x-min.png"), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9; 
-  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-
-}
 
 @media (min-width: 768px) {
   .products-wraper {
@@ -322,6 +310,11 @@ button {
 
     transform: translate(5%, -50%);
   }
+    .products-btm {
+      position: absolute;
+      bottom: 20px;
+      left: 92px;
+}
 }
 
 
@@ -383,8 +376,15 @@ button {
     }
   }
 }
-@media (min-width: 1200px) {
-   .products-card-yellow,
+
+@media (min-width:1200px){
+  .products-btm {
+      position: absolute;
+      bottom: 67px;
+      left: 165px;
+    }
+
+  .products-card-yellow,
   .products-card-orange {
     max-width: 370px;
     width: 100%;
@@ -399,7 +399,7 @@ button {
 
   .products-green::before,
   .products-yellow::before,
-  .products-orange::before {
+  .products-orange::before{
     display: block;
     width: 302px;
     height: 302px;
@@ -407,5 +407,4 @@ button {
     left: 0;
     transform: translate(12%, -50%);
   }
-
 }
