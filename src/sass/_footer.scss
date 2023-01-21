@@ -4,7 +4,7 @@
     background-color: #84A178;
 }
 
-@media screen and  (min-width: 320px) and (max-width:480px){
+@media screen and  (min-width: 320px) and (max-width:479px){
   .footer-ice-cream {
     display: none;
   }
@@ -14,12 +14,17 @@
   .footer_desctop {
     display: none;
   }
+  .footer_mobile {
+    max-width: 320;
+    height: 1487px;
+  }
   .footer_mobile_container {
     display: block;
-    max-width: 320px;
-    height: 327px;
+    max-width: 480px;
+    height: 372px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 20px;
   }
 
 .group39 {
@@ -67,7 +72,7 @@
   color: #FCFCFC
 }
 .line_footer {
-  border-top-color: #E1E1E1 ;
+  border-top: 1px solid #E1E1E1 ;
   max-width: 320px;
   margin-top: 40px;
 }
@@ -76,9 +81,10 @@
   font-size: 14px;
   line-height: 1.5;
   color: #7A7A7A;
+   
 }
 }
-@media screen and  (min-width: 481px) and (max-width:768px) {
+@media screen and  (min-width: 480px) and (max-width:767px) {
   .footer_mobile {
     display: none;
   }
@@ -89,20 +95,16 @@
     display: none;
   }
 
-  .footer_ice_cream{
+  .footer_ice_cream_container {
     
     display: block;
     max-width: 480px;
-    height: 327px;
+    height: 372px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 24px;
   }
-.group39 {
-  width: 234px;
-  height: 134px;
-  margin: 0;
-  margin-bottom: 60px;
-}
+
 .homemade {
   font-weight: 700;
   font-size: 18px;
@@ -124,7 +126,7 @@
 
 .mobile_contact_footer {
   display: flex;
-  
+  justify-content: end;
   margin-left: 56;
   margin-top: 20;
 }
@@ -152,7 +154,7 @@
   color: #7A7A7A;
 }
 }
-@media screen and  (min-width: 769px) and (max-width: 1200px) {
+@media screen and  (min-width: 768px) and (max-width: 1199px) {
   .footer_mobile {
     display: none;
   }
@@ -162,19 +164,20 @@
   .footer_ice_cream {
     display: none;
   }
-  .footer_mobile_container {
+  .footer-tablet-container {
     display: block;
-    max-width: 320px;
-    height: 327px;
+    max-width: 768px;
+    height: 253px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 12px;
   }
 
-.group39 {
-  width: 234px;
-  height: 134px;
+.text {
+  width: 352px;
+  height: 158px;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
 }
 .homemade {
   font-weight: 700;
@@ -226,7 +229,7 @@
 }
 }
 
-@media screen and  (min-width: 1201px) {
+@media screen and  (min-width: 1200px) {
   .footer_mobile {
     display: none;
   }
@@ -237,7 +240,7 @@
     display: none;
   }
   .footer_desctop_container {
-    display: block;
+    display: flex;
     max-width: 1168px;
     height: 214px;
     padding-left: 16px;
@@ -248,8 +251,7 @@
   width: 504px;
   height: 122px;
   margin: 0;
-  
-}
+  }
 .homemade {
   font-weight: 400;
   font-size: 30px;
