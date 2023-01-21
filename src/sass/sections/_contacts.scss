@@ -49,7 +49,6 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
-  align-items: center;
   color: var(--color-text-dark);
   background-color: var(--color-button-yellow);
   border-radius: 10px;
@@ -88,8 +87,8 @@
     padding-right: 32px;
   }
   .category {
-    max-width: 130px;
-    height: 22px;
+    min-width: 80px;
+    min-height: 22px;
     margin-bottom: 20px;
     padding-left: 22px;
     padding-right: 22px;
@@ -153,7 +152,7 @@
 @media screen and (min-width: 768px) {
   .category {
     min-width: 73px;
-    height: 30px;
+    min-height: 30px;
     padding-left: 14px;
     padding-right: 14px;
     margin-bottom: 32px;
