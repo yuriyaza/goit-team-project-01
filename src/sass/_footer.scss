@@ -20,14 +20,14 @@
   }
   .footer_mobile_container {
     display: block;
-    max-width: 480px;
+    max-width: 320px;
     height: 372px;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 20px;
   }
 
-.group39 {
+.text {
   width: 234px;
   height: 134px;
   margin: 0;
@@ -71,12 +71,17 @@
   line-height: 1.8;
   color: #FCFCFC
 }
-.line_footer {
+hr {
   border-top: 1px solid #E1E1E1 ;
   max-width: 320px;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 .underline {
+  max-width: 280px;
+  height: 42px;
+  display: flex;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
@@ -104,7 +109,6 @@
     padding-right: 20px;
     margin-bottom: 24px;
   }
-
 .homemade {
   font-weight: 700;
   font-size: 18px;
