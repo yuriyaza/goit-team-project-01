@@ -1,5 +1,8 @@
 .modal-ingredients {
-  position: relative;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 
   height: auto;
 
@@ -12,7 +15,9 @@
 }
 
 .modal-ingredients-button-close {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
 
   background-color: inherit;
@@ -21,7 +26,14 @@
   position: absolute;
   top: 12px;
   right: 12px;
+
+  color: #131313;
 }
+
+.modal-ingredients-button-close-svg {
+  fill: currentColor;
+}
+
 .modal-ingredients-product-heading {
   display: block;
   text-align: center;
@@ -156,6 +168,20 @@
   font-size: 14px;
   line-height: 1.214;
   color: #131313;
+
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.modal-ingredients-form-button:hover {
+  background-color: #0a8817;
+}
+
+.modal-ingredients-form-button:focus {
+  background-color: #0a8817;
+}
+
+.modal-ingredients-form-button:disabled {
+  background-color: #ababab;
 }
 
 .modal-ingredients-form > input,
@@ -206,6 +232,12 @@
     width: 20px;
     height: 20px;
   }
+
+  .modal-ingredients-button-close-svg {
+    width: 11.11px;
+    height: 11.14px;
+  }
+
   .modal-ingredients-product-heading {
     width: 142px;
 
@@ -266,6 +298,11 @@
   .modal-ingredients-button-close {
     width: 24px;
     height: 24px;
+  }
+
+  .modal-ingredients-button-close-svg {
+    width: 13.33px;
+    height: 13.37px;
   }
 
   .modal-ingredients-product-heading {
