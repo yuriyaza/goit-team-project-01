@@ -45,7 +45,7 @@
 .social_media_mobile_footer_icons {
   margin-top: 60px;
   display: flex;
-  text-align: end;
+  justify-content: end;
   gap: 20px;
 }
 
@@ -191,7 +191,7 @@
 }
 .social_media_mobile_footer_icons {
   display: flex;
-  margin-left: 158px;
+  justify-content: end;
   gap: 20px;
 }
 
@@ -272,7 +272,7 @@
 .mobile_contact_footer {
   display: flex;
 
-  text-align: end;
+  justify-content: end;
   margin-top: 20;
 }
 .mobile_ffc_footer {
