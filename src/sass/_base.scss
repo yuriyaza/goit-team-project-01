@@ -63,8 +63,9 @@ img {
 }
 
 .container {
+  min-width: 320px;
   max-width: 480px;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -72,6 +73,7 @@ img {
   .container {
     width: 768px;
     max-width: 100%;
+    padding: 0 32px;
   }
 }
 
@@ -79,5 +81,6 @@ img {
   .container {
     width: 1200px;
     max-width: 100%;
+    padding: 0 16px;
   }
 }
