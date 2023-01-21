@@ -2,8 +2,25 @@
 // Нижче добавляємо свої класи
 
 .modal-product-card {
-  width: 500px;
-  height: 50px;
-  background-color: coral;
-  border: 1px solid black;
+  min-width: 280px;
+  height: 990px;
+  background: #FCFCFC;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center ;
+
+}
+
+.form-label {
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+  width: 224px;
+  height: 32px;
 }
