@@ -14,7 +14,6 @@ var swiper = new Swiper('.gallery-swiper', {
       },
     },
   spaceBetween: 30,
-  // effect: "fade",
   mousewheel: true,
   autoplay: {
     delay: 5000,
