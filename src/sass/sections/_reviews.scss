@@ -1,23 +1,13 @@
 
-.swiper-slide {
-  display: block;
+.swiper-slide {  
   margin-left: auto;
   margin-right: auto;
   max-width: 280px;
   text-align: center;
-}g
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 32px;
 }
-.reviews-text {
-  width: 280px;
-  height: 256px;
-  padding: 40px 35px 40px 35px;
-  background: #84A178;
-  border-radius: 10px;
+.reviews-img {
+  display: block;
+  max-width: 100%; 
 }
 .reviews-name {
   font-family: 'Montserrat';
@@ -28,5 +18,13 @@
   text-align: center;
   color: #131313;
 }
+.reviews-text {
+  width: 280px;
+  height: 256px;
+  padding: 40px 35px 40px 35px;
+  background: #84A178;
+  border-radius: 10px;
+}
+
 
 
