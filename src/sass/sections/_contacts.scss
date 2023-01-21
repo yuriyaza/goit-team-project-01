@@ -12,6 +12,11 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
+.hr {
+    border: 1px solid #E1E1E1;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
 .city,
 .adress-cafe
 .day,
@@ -129,11 +134,7 @@
     flex-direction: column;
     gap: 16px;
   }
-  .hr {
-    border: 1px solid #E1E1E1;
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
+  
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-section {
