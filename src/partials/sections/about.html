@@ -1,7 +1,56 @@
-<section class="about">
-
-  <!-- Приклад для HTML -->
-  <!-- Замість цього <div> пишемо свій код -->
-  <div>About section sample</div>
-
+<section class="about" id="about">
+  <div class="about-container container">
+  <label for="about-title">
+    <span class="about-label">tradition and love</span>
+  </label>
+  <h1 class="about-title">how it's made?</h1>
+  <picture class="about-img">
+      <source srcset="/images/desktop/about/cow-desk-min.png 1x, /images/desktop/about/cow-desk@2x-min.png 2x" media="(min-width:1200px)">
+      <source srcset="/images/tablet/about/cow-tab-min.png 1x, /images/tablet/about/cow-tab@2x-min.png 2x" media="(min-width:768px)">
+      <source srcset="/images/mobile/about/cow-mob-min.png 1x, /images/mobile/about/cow-mob@2x-min.png 2x" media="(max-width:767px)">
+      <img src="/images/mobile/about/cow-mob-min.png" alt="Cow in a field">
+    </picture>
+  <div class="about-first-section"> 
+  <div class="description-list">
+      <p class="about-first-description about-description">Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts.</p>
+      <p class="about-second-description about-description">We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p></li>
+      <p class="about-third-description about-description">This is enough to choose ice cream and coffee for any mood!</p>
+  </div>
+  <button type="button" class="about-button">
+    <span>Read more</span>
+    <svg width="5.74px" height="9.98px">
+      <use href="/images/sprite.svg#icon-ep_arrow-right-bold"></use>
+    </svg>
+  </button>
+  </div>
+  <ul class="about-list">
+    <li class="about-item">
+      <div class="about-icon-div">
+        <svg class="about-icon" width="36" height="36">
+          <use href="/images/sprite.svg#icon-cow"></use>
+        </svg>
+      </div>
+      <h2 class="about-item-title">721</h2>
+      <p class="about-item-desription">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+    </li>
+    <li class="about-item">
+      <div class="about-icon-div">
+        <svg class="about-icon" width="36" height="36">
+          <use href="/images/sprite.svg#icon-weight"></use>
+        </svg>
+      </div>
+      <h2 class="about-item-title">16kg</h2>
+      <p class="about-item-desription">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+    </li>
+    <li class="about-item">
+      <div class="about-icon-div">
+        <svg class="about-icon" width="36" height="36">
+          <use href="/images/sprite.svg#icon-ice-crema"></use>
+        </svg>
+      </div>
+      <h2 class="about-item-title">84</h2>
+      <p class="about-item-desription">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+    </li>
+  </ul>
+</div>
 </section>

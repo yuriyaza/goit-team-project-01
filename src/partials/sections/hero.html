@@ -1,7 +1,108 @@
 <section class="hero">
-
-  <!-- Приклад для HTML -->
-  <!-- Замість цього <div> пишемо свій код -->
-  <div>Hero section sample</div>
-
+  <div class="container">
+    <div class="hero-wraper">
+      <div class="hero_left-block">
+        <h1 class="hero-title">
+          ice cream made with <span class="hero-title-upper">passion</span>
+        </h1>
+        <a href="#products" class="hero_button-products">Products</a>
+        <a href="#about" class="hero_button-about">How it’s made?</a>
+        <div class="hero_text-block">
+          <p class="hero-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <a href="#" class="hero_text-link">
+            <svg width="40px" height="16px">
+              <use href="../images/sprite.svg#icon-Arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero_right-block">
+        <p class="hero_cafe-counter">
+          <span class="cafe-counter">16</span> <br />
+          cafes
+        </p>
+        <p class="hero_ftracks-counter">
+          <span class="ftracks-counter">23</span> <br />
+          food tracks
+        </p>
+      </div>
+      <picture class="hero_dots-img">
+        <source
+          srcset="
+            ../images/desktop/Hero-header/tochki-desk-min.png    1x,
+            ../images/desktop/Hero-header/tochki-desk@2x-min.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ../images/tablet/Hero-header/tochki-tab-min.png    1x,
+            ../images/tablet/Hero-header/tochki-tab@2x-min.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ../images/mobile/Hero-header/tochki-mob320-min.png    1x,
+            ../images/mobile/Hero-header/tochki-mob320@2x-min.png 2x
+          "
+          media="(max-width:767px)"
+        />
+        <img
+          src="../images/mobile/Hero-header/tochki-mob320-min.png"
+          alt="a wave of dots"
+        />
+      </picture>
+      <picture class="many-ice-cream">
+        <source
+          srcset="
+            ../images/desktop/Hero-header/many-ice-cream-desk-min.png    1x,
+            ../images/desktop/Hero-header/many-ice-cream-desk@2x-min.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ../images/tablet/Hero-header/many-ice-cream-tab-min.png    1x,
+            ../images/tablet/Hero-header/many-ice-cream-tab@2x-min.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <img
+          src="../images/tablet/Hero-header/many-ice-cream-tab-min.png"
+          alt="many ice cream"
+        />
+      </picture>
+      <picture class="hero_main-img">
+        <source
+          srcset="
+            ../images/desktop/Hero-header/desktop-min.png    1x,
+            ../images/desktop/Hero-header/desktop@2x-min.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ../images/tablet/Hero-header/tablet-min.png    1x,
+            ../images/tablet/Hero-header/tablet@2x-min.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ../images/mobile/Hero-header/mobile-min.png    1x,
+            ../images/mobile/Hero-header/mobile@2x-min.png 2x
+          "
+          media="(max-width:767px)"
+        />
+        <img
+          src="../images/mobile/Hero-header/mobile-min.png"
+          alt="big ice cream"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
