@@ -32,16 +32,12 @@
   }
 .about-img {
   width: 280px;
-  height: 300px;
   margin: 0 auto;
   display: block;
   position: absolute;
   top: 240px;
   left: 20px;
   right: 20px;
-}
-.about-img > img {
-  height: 100%;
 }
 .description-list {
   margin-bottom: 24px;
@@ -85,24 +81,41 @@
   margin: 0 auto;  
   margin-bottom: 50px;
 }
+.hidden {
+  position: absolute;
+  transform: scale(0);
+}
 .about-item {
   max-width: 230px;
   margin: 0 auto;
 }
-.about-icon-div {
-  width: 50px;
-  height: 50px;
-  background-color: var(--color-button-yellow);
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+.about-item:first-child:before {
+  content: "";
+  background-image: url(../../images/cow.svg);
   margin: 0 auto;
   margin-bottom: 16px;
-}
-.about-icon {
-  fill: var(--color-text-dark);
-}
+  display: block;
+  width: 50px;
+  height: 50px;
+  }
+.about-item:nth-child(2):before {
+  content: "";
+  background-image: url(../../images/weight.svg);
+  margin: 0 auto;
+  margin-bottom: 16px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  }
+.about-item:last-child:before {
+  content: "";
+  background-image: url(../../images/ice.svg);
+  margin: 0 auto;
+  margin-bottom: 16px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  }
 .about-item-title {
   font-weight: 700;
   font-size: 36px;
@@ -167,7 +180,6 @@
     right: 406px;
     margin: 0;
     width: 330px;
-    height: 356px;
   }
   .about-first-section {
     max-width: 336px;
@@ -181,7 +193,6 @@
     margin-bottom: 8px;
   }
   .description-list {
-    
     margin: 0;
     margin-bottom: 32px;
   }
@@ -192,9 +203,6 @@
   .about-third-description {
     line-height: 24.5px;
     letter-spacing: 0.04em;
-  }
-  .about-icon-div {
-    margin-bottom: 32px;
   }
   .about-list {
     display: flex;
@@ -210,6 +218,9 @@
   .about-item:not(:last-child) {
     margin-bottom: 0;
   }
+  .about-item:first-child:before, .about-item:nth-child(2):before,  .about-item:last-child:before  {
+    margin-bottom: 32px;
+    }
   .about-item-title {
     font-size: 48px;
     line-height: 59px;
@@ -242,7 +253,6 @@
     left: 16px;
     right: 693px;
     width: 491px;
-    height: 529px;
   }
   .about-first-section {
     max-width: 463px;
@@ -266,9 +276,9 @@
   .about-item {
     max-width: 368px;
   }
-  .about-icon-div {
+  .about-item:first-child:before, .about-item:nth-child(2):before,  .about-item:last-child:before  {
     margin-bottom: 40px;
-  }
+    }
   .about-item-title {
     font-size: 58px;
     line-height: 71px;
