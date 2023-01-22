@@ -47,7 +47,17 @@
   color: var(--color-text-dark);
   background-color: var(--color-button-yellow);
   border-radius: 10px;
-  border-color: var(--color-button-yellow);
+  border-color: transparent;
+}
+.contacts-locations:hover {
+  background-color: var(--color-button-green);
+}
+.contacts-locations:focus {
+  background-color: var(--color-button-green);
+  color: #FFFFFF;
+}
+.contacts-locations:disabled {
+  background: var(--color-button-gray);
 }
 .contacts-franchise {
   min-width: 196px;
@@ -56,12 +66,21 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
-
   text-align: center;
   color: #000000;
   background-color: var(--color-salt);
   border: 2px solid var(--color-button-yellow);
   border-radius: 10px;
+}
+.contacts-franchise:hover {
+  border: 2px solid var(--color-button-green);
+}
+.contacts-franchise:focus {
+  border: 2px solid var(--color-button-green);
+  color: #FFFFFF;
+}
+.contacts-franchise:disabled {
+  border: 2px solid var(--color-button-gray);
 }
 .icon {
   fill: #000000;
