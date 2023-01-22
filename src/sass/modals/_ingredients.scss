@@ -3,6 +3,16 @@
   transform: translate(-50%, 0);
 }
 
+.modal-ingredients-button-close {
+  border: none;
+
+  background-color: inherit;
+
+  right: 12px;
+
+  color: var(--color-text-dark);
+}
+
 .modal-ingredients-button-close-svg {
   fill: currentColor;
 }
