@@ -1,7 +1,7 @@
 .wrapper-swiper-sections {
-  border: 1px solid black;
-  height: 1090px;
-  background-image: url(../../images/mobile/background-mobile/Backgroud_mobile-min.jpg);
+  // border: 1px solid black;
+  height: 1054px;
+  background-image: url('../../images/mobile/background-mobile/Backgroud_mobile-min.jpg');
   background-position: center;
   background-size: cover;
   background: linear-gradient(to bottom, #84A178 36px, transparent 36px);
@@ -16,12 +16,13 @@
 (min-width: 479px) and (min-resolution: 2x),
 (min-width: 479px) and (min-resolution: 192dpi) {
   .wrapper-swiper-sections {
-    background-image: url(../../images/mobile/background-mobile/Backgroud_mobile@2x-min.jpg);
+    background-image: url('../../images/mobile/background-mobile/Backgroud_mobile@2x-min.jpg');
   }
 }
+
 @media screen and (min-width:480) {
   .wrapper-swiper-sections {
-    height: 1157px;
+    height: 1107px;
     background: linear-gradient(to bottom, #84A178 50px, transparent 50px);
   }
 
@@ -33,8 +34,8 @@
 
 @media screen and (min-width: 768px) {
   .wrapper-swiper-sections {
-    height: 1161px;
-    background-image: url(../../images/tablet/background-tablet/Background_tablet-min.jpg);
+    height: 1017px;
+    background-image: url('../../images/tablet/background-tablet/Background_tablet-min.jpg');
     background: linear-gradient(to bottom, #84A178 144px, transparent 144px);
   }
 
@@ -47,14 +48,14 @@
 (min-width: 768px) and (min-resolution: 2x),
 (min-width: 768px) and (min-resolution: 192dpi) {
   .wrapper-swiper-sections {
-    background-image: url(../../images/tablet/background-tablet/Background_tablet@2x-min.jpg);
+    background-image: url('../../images/tablet/background-tablet/Background_tablet@2x-min.jpg');
   }
 }
 
 @media screen and (min-width: 1200px) {
   .wrapper-swiper-sections {
-    height: 1151px;
-    background-image: url(../../images/desktop/background-desctop/Backgroud_desktop-min.jpg);
+    height: 1051px;
+    background-image: url('../../images/desktop/background-desctop/Backgroud_desktop-min.jpg');
     background: linear-gradient(to bottom, #84A178 100px, transparent 100px);
   }
 
@@ -68,6 +69,6 @@
 (min-width: 1200px) and (min-resolution: 2x),
 (min-width: 1200px) and (min-resolution: 192dpi) {
   .wrapper-swiper-sections {
-    background-image: url(../../images/desktop/background-desctop/Backgroud_desktop@2x-min.jpg);
+    background-image: url('../../images/desktop/background-desctop/Backgroud_desktop@2x-min.jpg');
   }
 }
