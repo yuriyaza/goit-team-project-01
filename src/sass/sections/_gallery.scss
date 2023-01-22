@@ -1,15 +1,14 @@
 .wrapper-swiper-sections {
-  // border: 1px solid black;
   height: 1090px;  
   background-position: center;
-  background-size: cover;
   background-image: url('../../images/mobile/background-mobile/Backgroud_mobile-min.jpg');
 }
-.top-background{
-  position: absolute;
-  z-index: 1;
-  // background: linear-gradient(to bottom, #84A178 36px, transparent 36px);
+
+с-wrapper-swiper-sections{
+  width: 100vw;
+  background: linear-gradient(to bottom, #84A178 36px, transparent 36px);
 }
+
 .gallery {
   padding-bottom: 85px; 
   background: linear-gradient(to bottom, #84A178 36px, transparent 36px);
@@ -26,28 +25,31 @@
 
 @media screen and (min-width: 480px) {
   .wrapper-swiper-sections {
-    height: 1157px;
-    
+    height: 1157px;    
   }
-
-  .gallery {
-    padding-bottom: 80px;
+  .container-wrapper-swiper-sections {
+    width: 100vw;
     background: linear-gradient(to bottom, #84A178 50px, transparent 50px);
   }
+  .gallery {
+    padding-bottom: 80px;
+  }  
 }
-
 
 @media screen and (min-width: 768px) {
   .wrapper-swiper-sections {
     height: 1161px;
     background-image: url('../../images/tablet/background-tablet/Background_tablet-min.jpg');
   }
-
-  .gallery {
-    padding-bottom: 100px;
+  .container-wrapper-swiper-sections {
     background: linear-gradient(to bottom, #84A178 144px, transparent 144px);
   }
+  .gallery {
+    padding-bottom: 100px;
+  }  
 }
+
+
 @media (min-width: 768px) and (min-device-pixel-ratio: 2),
 (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
 (min-width: 768px) and (min-resolution: 2x),
@@ -62,11 +64,12 @@
     height: 1151px;
     background-image: url('../../images/desktop/background-desctop/Backgroud_desktop-min.jpg');
   }
-
-  .gallery {
-    padding-bottom: 140px;
+  .container-wrapper-swiper-sections {
     background: linear-gradient(to bottom, #84A178 100px, transparent 100px);
   }
+  .gallery {
+    padding-bottom: 140px;
+  }  
 }
 
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2),
