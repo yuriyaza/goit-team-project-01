@@ -45,11 +45,19 @@
      overflow-y: auto;
    
      background: #84A178;
+
+
+     transition-property: background-color;
+     transition-duration: 250ms;
      transition-timing-function: var(--timing-function);
    
      opacity: 0;
      visibility: hidden;
      pointer-events: none;
+     transform: translateX(100%);
+     transition: var(--timing-function);
+
+
      @media screen  and (min-width: 480px) { 
        width: 480px;
      }
@@ -69,6 +77,7 @@
      opacity: 1;
      visibility: visible;
      pointer-events: auto;
+     transform: translateX(0);
    }
    
    .header-menu_container{

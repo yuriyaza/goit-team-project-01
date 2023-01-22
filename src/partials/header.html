@@ -19,23 +19,23 @@
   
     <!-- button Buy now -->
   <div class="header-tablet-bt">
-    <button type="button" class="bt-buy-now nav_bt-buy-now" aria-label="buttun order"><span class="bt-text">Buy now</span> 
+    <button type="button" class="bt-buy-now nav_bt-buy-now js-open-modal" data-modal="product-card" aria-label="buttun order"><span class="bt-text">Buy now</span> 
       <svg class="icon-menu-burger" width="12" height="12" aria-label="Switch-on mobile menu">
         <use href="/images/sprite.svg#icon-ep_arrow-right-bold"></use>
     </svg>
     </button>
 <!-- button menu-open -->
 
-<button type="button" class="header-menu-open " >
+<button type="button" class="header-menu-open js-open-menu" >
   <svg class="icon-menu-burger" width="32" height="32" aria-label="Switch-on mobile menu">
       <use href="/images/sprite.svg#icon-menu-burger"></use>
   </svg>
 </button>
 </div>
 <!-- button menu-close -->
-<div class="header-menu ">
+<div class="header-menu js-menu-container">
 <div class="header-menu_container">
-<button type="button" class="header-menu-closed" >
+<button type="button" class="header-menu-closed js-close-menu" >
   <svg class="icon-menu-burger" width="32" height="32" aria-label="Switch-on mobile menu">
       <use href="/images/sprite.svg#icon-mobile-modal-X"></use>
   </svg>
@@ -69,7 +69,13 @@
 </div>
 </div> 
 </div>
-
+<script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+></script>
+<script src="/src/js/mobile-menu.js"></script>
 </header>
 
 
