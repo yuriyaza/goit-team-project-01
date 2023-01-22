@@ -14,11 +14,9 @@
 }
 .hr {
     border: 1px solid #E1E1E1;
-    margin-top: 24px;
-    margin-bottom: 24px;
 }
 .city,
-.adress-cafe
+.adress-cafe,
 .day,
 .time,
 .phone,
@@ -30,15 +28,9 @@
   letter-spacing: 0.04em;
   color: var(--color-text-dark);
 }
-
-
 .adress-cafe {
   color: var(--color-brown);
-}
-.day,
-.phone,
-.mail  {
-  color: var(--color-text-dark);
+  margin-bottom: 24px;
 }
 .time {
   color:var(--color-button-gray);
@@ -90,7 +82,6 @@
   .category {
     min-width: 80px;
     min-height: 22px;
-    margin-bottom: 20px;
     padding-left: 22px;
     padding-right: 22px;
     padding-top: 4px;
@@ -106,14 +97,21 @@
     color: var(--color-text-dark);
   }
   .city {
+    margin-top: 20px;
+    margin-bottom: 8px;
     min-width: 80px;
     min-height: 22px;
   }
   .phone {
     margin-bottom: 6px;
   }
-  
-  
+  .time-work {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .phone_mail {
+    margin-top: 24px; 
+  }
   
 }
 @media screen and (min-width: 480px) {
@@ -122,8 +120,8 @@
 @media screen and (max-width: 767px) {
   .contacts {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 16px;
   }
   .form-button {
@@ -142,6 +140,7 @@
   .contacts {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
   }
   .contacts-items {
@@ -149,6 +148,9 @@
     min-width: 224px;
     height: 537px;
   } 
+  .category {
+    margin-bottom: 12px;
+  }
 }
 @media screen and (min-width: 768px) {
   .category {
@@ -156,7 +158,6 @@
     min-height: 30px;
     padding-left: 14px;
     padding-right: 14px;
-    margin-bottom: 32px;
     line-height: 1.4;
     border-radius: 6px;
   }
@@ -169,7 +170,7 @@
     padding-right: 24px;
   }
   .city,
-  .adress-cafe
+  .adress-cafe,
   .day,
   .time,
   .phone,
@@ -177,13 +178,20 @@
     font-size: 14px;
   }
   .city {
+    margin-top: 32px;
     min-width: 73px;
     min-height: 30px;
+  }
+  .adress-cafe {
+    margin-bottom: 32px;
+  }
+  .phone_mail {
+    margin-top: 32px; 
   }
   .phone {
     margin-bottom: 4px;
   }
-  .hr {
+  .time-work {
     margin-top: 32px;
     margin-bottom: 32px;
   }
