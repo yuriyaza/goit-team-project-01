@@ -86,19 +86,13 @@ button {
   margin: 0 auto;
   border: none;
   background-color: transparent;
-
-
 }
 
 .products-btm {
   position: absolute;
-  width: 40px;
-  height: 2px;
   cursor: pointer;
   bottom: 24px;
-  left: 135px;
-
-
+  left: 120px;
 }
 
 @media (min-width: 480px) {
@@ -317,7 +311,6 @@ button {
   }
 
   .products-btm {
-    position: absolute;
     bottom: 20px;
     left: 92px;
   }
@@ -386,7 +379,6 @@ button {
 
 @media (min-width:1200px) {
   .products-btm {
-    position: absolute;
     bottom: 67px;
     left: 165px;
   }
