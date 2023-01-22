@@ -111,18 +111,16 @@
     }
   }
 }
-button {
-  display: block;
-  margin: 0 auto;
-  border: none;
-  background-color: transparent;
-}
 
 .products-btm {
   position: absolute;
   cursor: pointer;
   bottom: 24px;
   left: 90px;
+  display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
 }
 .products {
   background-size: cover;
