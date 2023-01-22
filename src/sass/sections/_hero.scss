@@ -1,12 +1,15 @@
 .hero {
+  // background-image: url(../../images/mobile/Hero-header/tochki-mob320-min.png);
   display: block;
   width: auto;
   background-color: #84a178;
-  height: 453px;
-  padding-top: 40px;
+  height: 502px;
+  padding-top: 98px;
+  overflow: hidden;
 }
 .hero-wraper {
-  height: 413px;
+  height: 404px;
+  width: 280px;
   position: relative;
 }
 .hero_right-block {
@@ -24,46 +27,75 @@
   color: #fcfcfc;
   margin-bottom: 32px;
   margin-right: 0;
+  animation: show 0.01s forwards, pop-word 1.5s forwards;
+  animation-timing-function: cubic-bezier(0.02, 1.23, 0.53, 1.16);
+  animation-delay: 500ms;
+  opacity: 0;
+
+  transform: rotateX(120deg);
+  transform-origin: 50% 100%;
 }
 .hero-title-upper {
   font-size: 34px;
   line-height: 96.5%;
 }
+@keyframes pop-word {
+  to {
+    transform: rotateX(0);
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+.hero-buttons {
+  display: flex;
+}
 .hero_button-products {
-  background-color: transparent;
+  background-color: #84a178;
   border: 2px solid #f8d24e;
   border-radius: 8px;
-  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
-  text-align: center;
   color: #000000;
   padding: 11px 26px;
   margin-right: 12px;
+  z-index: 1000;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero_button-about {
-  background-color: transparent;
   border: none;
-  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
-  text-align: center;
   text-decoration-line: underline;
+  padding: 11px 26px;
+  border-radius: 8px;
   color: #f8d24e;
+  z-index: 1000;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero_button-about:hover {
-  color: #0a8817;
+.hero_button-products:hover {
+  border: 2px solid #0a8817;
 }
-.hero_button-about:focus {
+.hero_button-products:focus {
+  border: 2px solid #0a8817;
   color: #fcfcfc;
 }
 
-.hero_button-products:hover,
+.hero_button-products:hover {
+  border: 2px solid #0a8817;
+}
+
 .hero_button-products:focus {
-  border-color: #0a8817;
+  border: #0a8817;
+  color: #fcfcfc;
 }
 
 .hero_text-block {
@@ -78,20 +110,31 @@
   position: absolute;
   width: 177px;
   bottom: 0;
-  left: 70px;
+  left: 65px;
+  animation: ice-cream-main 1000ms cubic-bezier(0, 0.61, 0.85, 0.75);
+}
+@keyframes ice-cream-main {
+  from {
+    transform: translateY(+100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 .hero_dots-img {
   position: absolute;
   width: 320px;
   bottom: 0;
-  left: -14px;
+  left: -20px;
+  z-index: 0;
 }
 @media screen and (min-width: 480px) {
   .hero {
     height: 415px;
   }
   .hero-wraper {
-    height: 375px;
+    height: 317px;
     width: 100%;
   }
   .hero-title {
@@ -100,18 +143,18 @@
   .hero_main-img {
     width: 218px;
     left: auto;
-    right: 20px;
+    right: 10px;
   }
   .hero_dots-img {
     width: 330px;
     left: auto;
-    right: -15;
+    right: -20;
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    height: 349px;
-    padding-top: 14px;
+    height: 415px;
+    padding-top: 80px;
   }
   .hero-wraper {
     height: 335px;
@@ -135,6 +178,10 @@
     color: #131313;
     margin-bottom: 4px;
   }
+
+  // .cafe-counter:hover {
+  //   color: red;
+  // }
   .hero_cafe-counter,
   .hero_ftracks-counter {
     font-size: 8px;
@@ -159,10 +206,23 @@
     color: #fcfcfc;
     margin-bottom: 12px;
   }
+  .hero-text:hover {
+    width: 160px;
+    height: 98px;
+    border: 1px solid #84a178;
+  }
   .hero_text-link > svg {
     fill: #fcfcfc;
   }
+  @keyframes ice-cream {
+    from {
+      transform: rotate(0);
+    }
 
+    to {
+      transform: rotate(360deg);
+    }
+  }
   .many-ice-cream {
     display: block;
     position: absolute;
@@ -170,23 +230,24 @@
     bottom: 18px;
     left: 0;
     z-index: 1000;
+    animation: ice-cream 60s linear infinite;
   }
 
   .hero_main-img {
     width: 268px;
     left: auto;
-    right: 75px;
+    right: 60px;
   }
   .hero_dots-img {
     width: 768px;
     left: auto;
-    right: -15;
+    right: -30;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    height: 591px;
-    padding-top: 45px;
+    height: 664px;
+    padding-top: 118px;
   }
   .hero-wraper {
     height: 546px;
@@ -225,5 +286,9 @@
     width: 1200px;
     left: auto;
     right: -15;
+  }
+  .hero_cafe-counter,
+  .hero_ftracks-counter {
+    font-size: 12px;
   }
 }
