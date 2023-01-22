@@ -52,6 +52,7 @@
 }
 .hero-buttons {
   display: flex;
+  align-items: center;
 }
 .hero_button-products {
   background-color: #84a178;
@@ -74,7 +75,6 @@
   font-size: 12px;
   line-height: 1.25;
   text-decoration-line: underline;
-  padding: 11px 26px;
   border-radius: 8px;
   color: #f8d24e;
   z-index: 1000;
