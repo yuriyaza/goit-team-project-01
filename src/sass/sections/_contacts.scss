@@ -4,6 +4,8 @@
 }
 .contacts {
   position: absolute;
+  right: 50%;
+  transform: translate(50%);
 }
 .contacts-items {
   padding-top: 40px;
@@ -12,7 +14,7 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
-.hr {
+.contacts-line {
     border: 1px solid #E1E1E1;
 }
 .city,
@@ -124,7 +126,7 @@
     align-items: center;
     gap: 16px;
   }
-  .form-button {
+  .form-b {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -139,7 +141,7 @@
   }
   .contacts {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     gap: 16px;
   }
@@ -195,7 +197,7 @@
     margin-top: 32px;
     margin-bottom: 32px;
   }
-  .form-button {
+  .form-b {
     display: flex;
     align-items: center;
     justify-content: center;
