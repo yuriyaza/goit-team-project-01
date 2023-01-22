@@ -1,20 +1,24 @@
-// .reviews {
-//   width: 480px;     
-//   padding: 0;
-//   margin: 0 auto;
-// }
+.swiper-slide {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  display: flex;
+  background: transparent;
+}
 .reviews-swiper-slide {
   display: block;
   margin-left: auto;
   margin-right: auto;    
 }
 .reviews-img {
-  // display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 85px;
   height: 85px;
   border-radius: 50%;
+  overflow: hidden;
   margin-bottom: 32px;
 }
 .reviews-text {
