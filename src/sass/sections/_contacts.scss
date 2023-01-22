@@ -12,8 +12,11 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
+.hr {
+    border: 1px solid #E1E1E1;
+}
 .city,
-.adress-cafe
+.adress-cafe,
 .day,
 .time,
 .phone,
@@ -25,47 +28,41 @@
   letter-spacing: 0.04em;
   color: var(--color-text-dark);
 }
-
 .adress-cafe {
   color: var(--color-brown);
-}
-.day,
-.phone,
-.mail  {
-  color: var(--color-text-dark);
+  margin-bottom: 24px;
 }
 .time {
   color:var(--color-button-gray);
 }
 .contacts-locations {
-  width: 196px;
-  height: 100%;
+  min-width: 196px;
+  min-height: 42px;
   padding: 12px 40px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  gap: 7px;
   color: var(--color-text-dark);
   background-color: var(--color-button-yellow);
   border-radius: 10px;
+  border-color: var(--color-button-yellow);
 }
 .contacts-franchise {
-  width: 196px;
-  height: 100%;
+  min-width: 196px;
+  min-height: 42px;
   padding: 13px 55px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
-  display: flex;
-  align-items: center;
+
   text-align: center;
   color: #000000;
   background-color: var(--color-salt);
   border: 2px solid var(--color-button-yellow);
   border-radius: 10px;
+}
+.icon {
+  fill: #000000;
 }
 
 @media screen and (min-width: 320px) {
@@ -74,7 +71,7 @@
     padding-bottom: 30px;
   }
   .contacts{
-    top: -353px;
+    top: -349px;
   }
   .contacts-items {
     width: 280px;
@@ -84,8 +81,7 @@
   }
   .category {
     min-width: 80px;
-    height: 22px;
-    margin-bottom: 20px;
+    min-height: 22px;
     padding-left: 22px;
     padding-right: 22px;
     padding-top: 4px;
@@ -101,33 +97,36 @@
     color: var(--color-text-dark);
   }
   .city {
+    margin-top: 20px;
+    margin-bottom: 8px;
     min-width: 80px;
     min-height: 22px;
   }
   .phone {
     margin-bottom: 6px;
   }
-  
-  .hr {
-    border: 1px solid #E1E1E1;
+  .time-work {
     margin-top: 24px;
     margin-bottom: 24px;
   }
-  .form-button {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 16px;
+  .phone_mail {
+    margin-top: 24px; 
   }
+  
 }
 @media screen and (min-width: 480px) {
-  .contacts {
-    top: -349px; 
- }
+ 
 }
 @media screen and (max-width: 767px) {
   .contacts {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .form-button {
+    display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 16px;
   }
@@ -141,6 +140,7 @@
   .contacts {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
   }
   .contacts-items {
@@ -148,14 +148,16 @@
     min-width: 224px;
     height: 537px;
   } 
+  .category {
+    margin-bottom: 12px;
+  }
 }
 @media screen and (min-width: 768px) {
   .category {
     min-width: 73px;
-    height: 30px;
+    min-height: 30px;
     padding-left: 14px;
     padding-right: 14px;
-    margin-bottom: 32px;
     line-height: 1.4;
     border-radius: 6px;
   }
@@ -168,7 +170,7 @@
     padding-right: 24px;
   }
   .city,
-  .adress-cafe
+  .adress-cafe,
   .day,
   .time,
   .phone,
@@ -176,13 +178,20 @@
     font-size: 14px;
   }
   .city {
+    margin-top: 32px;
     min-width: 73px;
     min-height: 30px;
+  }
+  .adress-cafe {
+    margin-bottom: 32px;
+  }
+  .phone_mail {
+    margin-top: 32px; 
   }
   .phone {
     margin-bottom: 4px;
   }
-  .hr {
+  .time-work {
     margin-top: 32px;
     margin-bottom: 32px;
   }
@@ -202,6 +211,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    top: -128px;
   }
   .contacts-items {
     flex-basis: calc((100% - 64px) / 3); 
