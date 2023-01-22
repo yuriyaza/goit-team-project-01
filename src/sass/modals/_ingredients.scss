@@ -1,9 +1,161 @@
-// Приклад для CSS
-// Нижче добавляємо свої класи
-
 .modal-ingredients {
-  width: 500px;
-  height: 50px;
-  background-color: gainsboro;
-  border: 1px solid black;
+  border: 2px solid var(--color-button-yellow);
+}
+
+.modal-ingredients-button-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+
+  background-color: inherit;
+  cursor: pointer;
+
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  color: var(--color-text-dark);
+}
+
+.modal-ingredients-button-close-svg {
+  fill: currentColor;
+}
+
+.modal-ingredients-product-heading {
+  display: block;
+  text-align: center;
+
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #131313;
+}
+.modal-ingredients-product-container-image {
+  display: block;
+  width: 132px;
+  height: 132px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+
+  border-radius: 50%;
+}
+.modal-ingredients-product-image {
+  position: relative;
+  top: -7px;
+
+  width: 132px;
+  height: 132px;
+
+  border-radius: 50%;
+  background-color: var(--color-button-yellow);
+}
+.modal-ingredients-value-list {
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: fit-content;
+}
+.modal-ingredients-value-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+
+  color: #131313;
+}
+.modal-ingredients-value-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+
+  color: #131313;
+}
+.modal-ingredients-ingredients-heading {
+  display: block;
+
+  width: fit-content;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #131313;
+
+  text-transform: capitalize;
+}
+.modal-ingredients-ingredients-list {
+  width: 100%;
+}
+.modal-ingredients-ingredients-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 11px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+.modal-ingredients-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-ingredients-form-button {
+  display: block;
+  height: 42px;
+
+  background: var(--color-button-yellow);
+  border-radius: 10px;
+  border: none;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  color: #131313;
+
+  transition: background-color var(--transition-rule);
 }
