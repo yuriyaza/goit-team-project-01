@@ -1,9 +1,22 @@
-<div class="backdrop is-hidden">
-  <div class="modal-location">
+<div class="overlay js-overlay-modal"></div>
 
-    <!-- Приклад для HTML -->
-    <!-- Замість цього <div> пишемо свій код -->
-    <div>Location modal sample</div>
-  
+<div class="modal" data-modal="location">
+  <button class="modal-button-close js-modal-close" type="button">
+    <svg width="11" height="11">
+      <use href="../images/sprite.svg#icon-mobile-modal-X"></use>
+    </svg>
+  </button>
+  <h2 class="modal-location-title">Our Locations</h2>
+  <div class="modal-location-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.232872347788!2d-118.4102648361784!3d33.8836558996704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b3eca6743829%3A0x98448969b9b4373d!2s1003%20Manhattan%20Ave%2C%20Manhattan%20Beach%2C%20CA%2090266%2C%20%D0%A1%D0%A8%D0%90!5e0!3m2!1sru!2sua!4v1674349889659!5m2!1sru!2sua"
+      width="100%"
+      height="100%"
+      style="border: none; border-radius: 10px"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </div>
+  <a class="modal-location-link" target="_blank" href="https://www.google.com/maps/place/1003+Manhattan+Ave,+Manhattan+Beach,+CA+90266,+USA">Open map</a>
 </div>
