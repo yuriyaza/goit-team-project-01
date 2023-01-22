@@ -1,14 +1,18 @@
 .wrapper-swiper-sections {
   // border: 1px solid black;
-  height: 1054px;
-  background-image: url('../../images/mobile/background-mobile/Backgroud_mobile-min.jpg');
+  height: 1090px;  
   background-position: center;
   background-size: cover;
-  background: linear-gradient(to bottom, #84A178 36px, transparent 36px);
+  background-image: url('../../images/mobile/background-mobile/Backgroud_mobile-min.jpg');
 }
-
+.top-background{
+  position: absolute;
+  z-index: 1;
+  // background: linear-gradient(to bottom, #84A178 36px, transparent 36px);
+}
 .gallery {
-  margin-bottom: 85px;
+  padding-bottom: 85px; 
+  background: linear-gradient(to bottom, #84A178 36px, transparent 36px);
 }
 
 @media (max-width: 479px) and (min-device-pixel-ratio: 2),
@@ -20,27 +24,28 @@
   }
 }
 
-@media screen and (min-width:480) {
+@media screen and (min-width: 480px) {
   .wrapper-swiper-sections {
-    height: 1107px;
-    background: linear-gradient(to bottom, #84A178 50px, transparent 50px);
+    height: 1157px;
+    
   }
 
   .gallery {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
+    background: linear-gradient(to bottom, #84A178 50px, transparent 50px);
   }
 }
 
 
 @media screen and (min-width: 768px) {
   .wrapper-swiper-sections {
-    height: 1017px;
+    height: 1161px;
     background-image: url('../../images/tablet/background-tablet/Background_tablet-min.jpg');
-    background: linear-gradient(to bottom, #84A178 144px, transparent 144px);
   }
 
   .gallery {
-    margin-bottom: 100px
+    padding-bottom: 100px;
+    background: linear-gradient(to bottom, #84A178 144px, transparent 144px);
   }
 }
 @media (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -54,13 +59,13 @@
 
 @media screen and (min-width: 1200px) {
   .wrapper-swiper-sections {
-    height: 1051px;
+    height: 1151px;
     background-image: url('../../images/desktop/background-desctop/Backgroud_desktop-min.jpg');
-    background: linear-gradient(to bottom, #84A178 100px, transparent 100px);
   }
 
   .gallery {
-    margin-bottom: 140px;
+    padding-bottom: 140px;
+    background: linear-gradient(to bottom, #84A178 100px, transparent 100px);
   }
 }
 
