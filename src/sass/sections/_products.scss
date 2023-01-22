@@ -1,15 +1,15 @@
+
 .products-wraper-lab {
   font-weight: 800;
-  font-size: 18px;
-  line-height: 1.2;
-  text-align: center;
-  text-transform: uppercase;
-
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    
 }
 
 .products-wraper-titl {
   font-family: 'Seymour One';
-
   font-weight: 400;
   font-size: 30px;
   line-height: 1.2;
@@ -18,6 +18,7 @@
   text-transform: uppercase;
   margin-bottom: 145px;
 }
+  
 
 .products-card-titl {
   font-weight: 700;
@@ -37,8 +38,6 @@
   letter-spacing: 0.04em;
   margin-bottom: 69px;
 }
-
-
 
 
 @media (min-width: 768px) {
@@ -80,7 +79,38 @@
 
   }
 }
+.products-wraper{
+  width: 100%;
+}
 
+@media (min-width: 480px) {
+  .products {
+    background-image: url("../../images/mobile/background-mobile/Backgroud_mobile-min.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .products {
+      background-image: url("../../images/mobile/background-mobile/Backgroud_mobile@2x-min.jpg");
+    }
+  }
+}
+@media (max-width: 480px) {
+  .products {
+    background-image: url("../../images/mobile/background-mobile/Backgroud_mobile-min.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .products {
+      background-image: url("../../images/mobile/background-mobile/Backgroud_mobile@2x-min.jpg");
+    }
+  }
+}
 button {
   display: block;
   margin: 0 auto;
@@ -92,37 +122,71 @@ button {
   position: absolute;
   cursor: pointer;
   bottom: 24px;
-  left: 120px;
+  left: 90px;
 }
-
-@media (min-width: 480px) {
-  .products-wraper {
-    background-image: url("../../images/mobile/background-mobile/Backgroud_mobile-min.jpg");
-  }
-
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
-    .products-wraper {
-      background-image: url("../../images/mobile/background-mobile/Backgroud_mobile@2x-min.jpg");
-    }
-  }
-}
-
-
-.products-wraper {
+.products {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 60px 80px;
-}
 
+}
+.products-wraper {
+  padding: 60px 20px;
+}
 .products-inner {
   display: block;
 
 }
+.products-card-yellow,
+.products-card-orange,
+.products-card-green {
+  position: relative;
+  max-width: 280px;
+  width: 100%;
+  padding: 123px 40px 24px;
+  border-radius: 24px;
 
+}
+
+.products-card-green {
+  background-color: var(--color-light-salt);
+  margin-bottom: 168px;
+
+}
+
+.products-card-yellow {
+  background-color: var(--color-yellow);
+  margin-bottom: 168px;
+
+}
+
+.products-card-orange {
+  background-color: var(--color-brown);
+
+}
+
+.products-green::before,
+.products-yellow::before,
+.products-orange::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate(12%, -50%);
+  border-radius: 50%;
+}
+
+
+@media (min-width: 480px){
+  .products-wraper {
+      padding: 60px 80px;
+    }
 .products-card-yellow,
 .products-card-orange {
   position: relative;
@@ -158,24 +222,64 @@ button {
   background-color: var(--color-brown);
 
 }
+.products-btm{
+  left:120px;
+}
 
 .products-green::before,
 .products-yellow::before,
 .products-orange::before {
   content: "";
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  top: 0px;
-  left: 0px;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transform: translate(25%, -50%);
-  border-radius: 50%;
+  transform: translate(20%, -50%);
+  }
+}
+ 
+@media (max-width: 480px) {
+  .products-green::before {
+    background-image: url("../../images/buy-now-modal-produkt-card/kelsey-curtis-min.png");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .products-green::before {
+      background-image: url("../../images/buy-now-modal-produkt-card/kelsey-curtis@2x-min.png");
+    }
+  }
 }
 
+@media (max-width: 480px) {
+  .products-yellow::before {
+    background-image: url("../../images/buy-now-modal-produkt-card/pariwat-pannium-min.png");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .products-yellow::before {
+      background-image: url("../../images/buy-now-modal-produkt-card/pariwat-pannium@2x-min.png");
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .products-orange::before {
+    background-image: url("../../images/buy-now-modal-produkt-card/victor-rutka-min.png");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .products-orange::before {
+      background-image: url("../../images/buy-now-modal-produkt-card/victor-rutka@2x-min.png");
+    }
+  }
+}
+
+ 
 @media (min-width: 480px) {
   .products-green::before {
     background-image: url("../../images/buy-now-modal-produkt-card/kelsey-curtis-min.png");
@@ -223,7 +327,7 @@ button {
 
 
 @media (min-width: 768px) {
-  .products-wraper {
+  .products {
     background-image: url('../../images/tablet/background-tablet/Background_tablet-min.jpg');
   }
 
@@ -231,7 +335,7 @@ button {
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
-    .products-wraper {
+    .products {
       background-image: url('../../images/tablet/background-tablet/Background_tablet@2x-min.jpg');
     }
   }
@@ -318,7 +422,7 @@ button {
 
 
 @media (min-width: 1200px) {
-  .products-wraper {
+  .products {
     background-image: url('../../images/desktop/background-desctop/Backgroud_desktop-min.jpg');
   }
 
@@ -326,7 +430,7 @@ button {
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
-    .products-wraper {
+    .products{
       background-image: url('../../images/desktop/background-desctop/Backgroud_desktop@2x-min.jpg');
     }
   }
@@ -378,6 +482,9 @@ button {
 }
 
 @media (min-width:1200px) {
+  .products{
+    background-repeat: repeat;
+  }
   .products-btm {
     bottom: 67px;
     left: 165px;
