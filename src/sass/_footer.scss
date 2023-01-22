@@ -100,12 +100,11 @@
   .footer_desctop {
     display: none;
   }
-
   .footer_ice_cream_container {
     
     display: block;
     min-width: 480px;
-    height: 372px;
+    height: 270px;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 24px;
@@ -162,13 +161,20 @@
   margin-top: 10px;
   
 }
+.footerline {
+  margin: 0;
+  max-width: auto;
+  margin-top: 40px;
+}
 
 .underline {
+
   border-top: #E1E1E1;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   color: #7A7A7A;
+  margin-bottom: 24px;
   
 }
 }
@@ -182,19 +188,12 @@
   .footer_ice_cream {
     display: none;
   }
-  .footer-tablet-container {
-    
-    min-width: 768px;
-    height: 253px;
-    padding-left: 33px;
-    padding-right: 32px;
-    margin-bottom: 12px;
-  }
-
+  
 .homemade {
   width: 352px;
   height: 57px;
   margin: 0;
+  margin-left: 33px;
   margin-bottom: 8px;
   
   font-weight: 700;
@@ -202,6 +201,19 @@
   line-height: 1.2;
   color: #FCFCFC;
   margin-bottom: 8px;
+}
+.footer_wps {
+  min-width: 703px;
+  max-height: 118px;
+  margin: 0;
+  padding: 0;
+  padding-left: 33px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  
 }
 .passion {
   width: 263px;
@@ -215,20 +227,18 @@
 .social_media_mobile_footer_icons {
   display: flex;
   justify-content: end;
-  gap: 20px;
+  gap: 30px;
 }
 
 .mobile_contact_footer {
-  display: flex;
-
-  margin-left: 56;
-  margin-top: 20;
+   margin-top: 34px;
 }
 .mobile_ffc_footer {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.8;
   color: #131313;
+  padding-right: 2px;
 }
 .mobile_tel_footer {
   font-weight: 700;
@@ -236,16 +246,20 @@
   line-height: 1.8;
   color: #FCFCFC
 }
-.line_footer {
+.footerline {
   border-top-color: #E1E1E1 ;
-  max-width: 320px;
-  margin-top: 40px;
+  max-width: 100%;
+  margin: 0;
+  margin-top: 32px;
 }
 .underline {
+  display: flex;
+  justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   color: #7A7A7A;
+  margin-top: 12px;
 }
 }
 
@@ -259,16 +273,28 @@
   .footer_ice_cream {
     display: none;
   }
-  .footer_desctop_container {
-    display: flex;
-    max-width: 1168px;
+  .footer_desctop {
+    min-width: 1168px;
     height: 214px;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-bottom: 12px;
+  }
+  .footer_desctop_container {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    height: 122px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: flex-end;
   }
 
 .text {
-  width: 504px;
+  min-width: 504px;
   height: 122px;
   margin: 0;
   }
@@ -277,7 +303,7 @@
   font-size: 30px;
   line-height: 1.2;
   color: #FCFCFC;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 .passion {
   font-weight: 700;
@@ -286,38 +312,46 @@
   color: #FCFCFC;
 }
 .social_media_mobile_footer_icons {
+  padding-top: 18px;
   display: flex;
   text-align: end;
-  gap: 20px;
+  gap: 30px;
 }
 
 .mobile_contact_footer {
   display: flex;
-
-  justify-content: end;
-  margin-top: 20;
+  padding-top: 35;
+  
+  
 }
 .mobile_ffc_footer {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.8;
   color: #131313;
+  padding-right: 3px;
 }
 .mobile_tel_footer {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.8;
-  color: #FCFCFC
+  color: #FCFCFC;
+  
 }
-.line_footer {
+.footerline {
   border-top-color: #E1E1E1 ;
-  max-width: 320px;
-  margin-top: 40px;
+  width: 100%;
+  margin: 0;
+  margin-top: 60;
 }
 .underline {
+ 
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.8;
   color: #7A7A7A;
+  display: flex;
+  justify-content: center;
+  
 }
 }
