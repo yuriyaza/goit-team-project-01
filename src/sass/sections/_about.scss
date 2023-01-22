@@ -1,9 +1,281 @@
-// Приклад для CSS
-// Нижче добавляємо свої класи
-
 .about {
-  width: 500px;
+  background-color: var(--color-salt);
+}
+.about-container {
+  padding-top: 61px;
+  padding-bottom: 68px;
+  position: relative;
+}
+.about-label, .about-title, .about-description, .about-item-title, .about-item-desription {
+  color: var(--color-text-white);
+}
+.about-container > label {
+    text-align: center;
+    display: block;
+    margin-bottom: 12px;
+    line-height: 22px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.about-title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 372px;
+  }
+.about-img {
+  width: 280px;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: 240px;
+  left: 20px;
+  right: 20px;
+}
+.about-img > img {
+  height: 100%;
+}
+.description-list {
+  margin-bottom: 24px;
+}
+.about-description:not(last-child) {
+  margin-bottom: 4px;
+}
+.about-description {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+}
+.about-first-description {
+  letter-spacing: 0.04em;
+  line-height: 21px;
+  margin-bottom: 50px;
+}
+.about-second-description, .about-third-description {
+  line-height: 19px;
+}
+.about-button {
+  width: 164px;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background: var(--color-button-yellow);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  padding: 12px 34px 12px 34px;
+  margin: 0 auto;
+}
+.about-first-section {
+  margin-bottom: 50px;
+  max-width: 220px;  
+  margin: 0 auto;  
+  margin-bottom: 50px;
+}
+.about-item {
+  max-width: 230px;
+  margin: 0 auto;
+}
+.about-icon-div {
+  width: 50px;
   height: 50px;
-  background-color: tomato;
-  border: 1px solid black;
+  background-color: var(--color-button-yellow);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.about-icon {
+  fill: var(--color-text-dark);
+}
+.about-item-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  }
+.about-item-desription {
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+}
+.about-item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 480px) {
+  .about-container {
+    padding-top: 60px;
+    padding-bottom: 81px;
+  }
+  .about-img {
+    left: 100px;
+    right: 100px;
+  }
+  .about-first-section {
+    margin-bottom: 60px;
+  }
+  .about-title {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+  }
+  .about-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+  }
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    padding-bottom: 204px;
+  }
+  .about-container > label {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+  }
+  .about-title {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 43px;
+    max-width: 454px;
+    margin-bottom: 80px;
+  }
+  .about-img {
+    top: 214px;
+    left: 32px;
+    right: 406px;
+    margin: 0;
+    width: 330px;
+    height: 356px;
+  }
+  .about-first-section {
+    max-width: 336px;
+    margin-left: 368px;
+    margin-bottom: 80px;
+  }
+  .about-description {
+    text-align: left;
+  }
+  .about-description:not(last-child) {
+    margin-bottom: 8px;
+  }
+  .description-list {
+    
+    margin: 0;
+    margin-bottom: 32px;
+  }
+  .about-second-description {
+    line-height: 21px;
+    letter-spacing: 0.04em;
+  }
+  .about-third-description {
+    line-height: 24.5px;
+    letter-spacing: 0.04em;
+  }
+  .about-icon-div {
+    margin-bottom: 32px;
+  }
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  .about-item {
+    max-width: 152px;
+    margin: 0;
+  }
+  .about-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .about-item-title {
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 12px;
+  }
+  .about-item-desription {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  }
+
+@media screen and (min-width: 1200px) {
+  .about-container {
+    padding-bottom: 178px;
+  }
+  .about-container > label {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .about-title {
+    font-size: 36px;
+    line-height: 45px;
+    max-width: 481px;
+    letter-spacing: .05em;
+    margin-bottom: 172px;
+  }
+  .about-img {
+    top: 236px;
+    left: 16px;
+    right: 693px;
+    width: 491px;
+    height: 529px;
+  }
+  .about-first-section {
+    max-width: 463px;
+    margin-bottom: 146px;
+    margin-left: 600px;
+  }
+  .description-list {
+    margin-bottom: 54px;
+  }
+  .about-first-description {
+    font-size: 16px;
+    line-height: 27.76px;
+  }
+  .about-second-description, .about-third-description {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .about-list {
+    gap: 32px;
+  }
+  .about-item {
+    max-width: 368px;
+  }
+  .about-icon-div {
+    margin-bottom: 40px;
+  }
+  .about-item-title {
+    font-size: 58px;
+    line-height: 71px;
+  }
+  .about-item-desription {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+  }
 }

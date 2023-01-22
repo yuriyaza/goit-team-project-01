@@ -1,9 +1,49 @@
-<div class="backdrop is-hidden">
+<div class="backdrop ">
   <div class="modal-product-card">
 
     <!-- Приклад для HTML -->
     <!-- Замість цього <div> пишемо свій код -->
-    <div>Product Card modal sample</div>
+    <p class="product-modal-text"> Buy now </p>
+
+    <form class="form">
+
+    <label class="check">
+      <div class="cream"></div>
+      <input type="checkbox" name="product" value="ice cream" class="check-input" checked />
+      <span class="check-box"></span>
+      ICE CREAM
+    </label> 
+  
+     <label class="check">
+      <div class="coffee"></div>
+      <input type="checkbox" name="product" value="ice coffee" class="check-input" checked />
+      <span class="check-box"></span>
+      ICE COFFEE
+     </label> 
+  
+     <label class="check">
+      <div class="milkshake"></div>
+      <input type="checkbox" name="product" value="milkshake" class="check-input" checked />
+      <span class="check-box"></span>
+      MILKSHAKE
+     </label>
+
+    
+      <div class="form-field">
+     <label for="name" class="form-label">Name</label>
+     <input type="text" id="name" class="form-input">
+      </div>
+
+     <div class="form-field">
+     <label for="phone" class="form-label">Phone</label>
+     <input type="tel" id="phone" class="form-input">
+     </div>
+     <div class="form-field">
+     <label for="comment" class="form-label">Comment</label>
+     <textarea name="comment" id="comment"  rows="4" class="form-textarea"></textarea>
+     </div>
+     <button type="submit" class="form-button"> Submit</button>
+    </form>
   
   </div>
 </div>

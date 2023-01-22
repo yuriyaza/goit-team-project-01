@@ -12,6 +12,10 @@
 
 @import './footer';
 
+@import './swiper/reviews-swiper.scss';
+@import './swiper/gallery-swiper.scss';
+
+@import './modals/all-modals';
 @import './modals/product-card';
 @import './modals/ingredients';
 @import './modals/read-more';
