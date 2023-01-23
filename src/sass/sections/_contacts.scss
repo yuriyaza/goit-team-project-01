@@ -49,8 +49,7 @@
   background-color: var(--color-button-yellow);
   border-radius: 10px;
   border-color: transparent;
-  
-
+  transition: background-color var(--transition-rule-modal), color var(--transition-rule-modal);
 }
 .contacts-locations:hover {
   background-color: var(--color-button-green);
@@ -60,7 +59,7 @@
   color: #FFFFFF;
 }
 .contacts-locations:disabled {
-  background: var(--color-button-gray);
+  background-color: var(--color-button-gray);
 }
 .contacts-franchise {
   min-width: 196px;
