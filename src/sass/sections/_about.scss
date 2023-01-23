@@ -75,6 +75,17 @@
   padding: 12px 34px 12px 34px;
   margin: 0 auto;
 }
+.about-button:hover {
+  background: var(--color-button-green);
+}
+.about-button:focus {
+  background: var(--color-button-green);
+  color: var(--color-text-white);
+  fill: var(--color-text-white);
+}
+.about-button:disabled {
+  background: var(--color-button-gray);
+}
 .about-first-section {
   margin-bottom: 50px;
   max-width: 220px;  
