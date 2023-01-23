@@ -1,9 +1,330 @@
-// Приклад для CSS
-// Нижче добавляємо свої класи
+/******* загальні*******/
+  .page-header {
+   z-index: 200;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    background-color:  #84A278; 
+    position: fixed;
+    width: 100%;
 
-.header {
-  width: 500px;
-  height: 50px;
-  background-color: powderblue;
-  border: 1px solid black;
-}
+
+   }
+
+   .page-heder-container {
+     display: flex;
+     align-items: flex-end;
+     justify-content: space-between;
+   }
+   .logo-ice {
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+   }
+   
+ 
+   .header-menu-open {
+    background-color: transparent;
+     border: none;
+     margin: 0;
+     padding: 0;
+     line-height: 0;
+  
+   }
+  
+   
+    /******* header-mobile-menu*******/
+   
+     
+   .header-menu {
+    z-index: 50;
+     display: flex;
+     position: fixed;
+     top: 0;
+     right: 0;
+     width: 320px;
+     height: 100vh;
+     overflow-y: auto;
+   
+     background: #84A178;
+
+     opacity: 0;
+     visibility: hidden;
+     pointer-events: none;
+     transform: translateX(100%);
+     transition: var(--timing-function);
+
+
+     @media screen  and (min-width: 480px) { 
+       width: 480px;
+     }
+     
+   
+     @media screen  and (min-width: 768px) and (max-width: 1199px) {
+       width: 768px;
+     
+     }
+   
+     @media screen  and (min-width: 1200px)  {
+       display: none;
+     } 
+   }
+   
+   .header-menu.is-open {
+     opacity: 1;
+     visibility: visible;
+     pointer-events: auto;
+     transform: translateX(0);
+   }
+   
+   .header-menu_container{
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     padding-right: 32px;
+     padding-bottom: 64px;
+     padding-left: 32px;
+     
+     margin: 0 auto;
+     width: 100vw;
+     height: 100%;
+   
+     @media screen and (min-width:480px){
+       padding: 20px 20px 88px 20px;
+      
+     }
+     @media screen and (min-width:768px){
+       padding-left: 32px;
+       padding-bottom: 40px;
+       padding-right: 32px;
+     }
+   }
+      @media screen and (max-width:480px){
+      .item-none{
+        display: none;
+      }
+      }
+
+   
+    /******* header-mobile-menu*******/
+
+       
+    /******* header-mobile*******/
+
+   .menu-logo{
+     margin-top: 12px;
+   
+     @media screen and (min-width:480px){
+       margin-top: 0;
+     }
+   }
+   
+   .header-menu-closed {
+     position: absolute;
+     top: 16px;
+     right: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 32px;
+     height: 32px;
+     fill: var(--color-text-white);
+     border: none;
+     padding: 0;
+     background-color: transparent;
+   
+     transition-duration: 500ms;
+     transition-timing-function: var(--timing-function);
+     
+     @media screen and (min-width: 480px) {
+       top: 20px;
+     }
+   
+     @media screen and (min-width: 768px) {
+       top: 32px;
+       right: 32px;
+     }
+   }
+   
+   .header-list {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-top: 51px;
+     margin-bottom: auto;
+   
+     @media screen  and (min-width: 480px){
+       margin-top: 40px;
+     
+     }
+     @media screen  and (min-width:768px){
+       margin-top: 76px;
+     }
+   }
+   
+   .header-menu-item:not(:last-child) {
+     padding-bottom: 32px;
+   
+     @media screen  and (min-width:768px){
+       padding-bottom: 40px;
+     }
+   }
+   
+   .header-menu-item {
+     font-weight: 700;
+     font-size: 32px;
+     line-height: 1.21;
+     text-align: center;
+     color: var(--color-text-white);
+   
+     @media screen  and (min-width: 768px) and (max-width: 1199px) {
+       font-size: 48px;
+       line-height: 1.23;
+     
+     }
+   }
+   
+
+   
+   .bt-buy-now {
+     width: 152px;
+     height: 42px;
+     left: 0px;
+     top: 0px;
+      border: none;
+     background: #F8D24E;
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: auto;
+     margin-left: auto;
+     margin-right: auto;
+
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 1.2;
+     display: flex;
+     align-items: center;
+     text-align: center;
+     gap: 4px;
+     color: #000000;
+   
+     transition-property: background-color;
+     transition-duration: 250ms;
+     transition-timing-function: var(--timing-function);
+
+   }
+   
+ 
+   .bt-buy-now:hover{
+    background: #0A8817;
+
+   }
+   
+   .bt-buy-now:focus{
+    background: #0A8817;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+   }
+
+   
+   .bt-buy-now:disabled {
+    background: #ABABAB;
+ 
+   }
+
+   /******* mobile-menu*******/
+
+
+   @media screen and (min-width: 480px){
+    .logo-ice-mob {
+       width: 48px;
+       height: 44px;
+     }
+   }
+
+
+    /******* header desktop min-width:768 *******/
+   
+   @media screen and (max-width:768px){   
+     .nav_bt-buy-now{
+       display: none;
+     } 
+   }
+   
+   @media screen  and (max-width:1200px){
+     .header-nav-list {
+       display: none;
+     } 
+   }
+   
+   @media screen and (min-width:768px) and (max-width:1200px){
+     .page-header {
+       padding-top: 24px;
+     }
+     .header-nav-list {
+       display: none;
+     }
+     .header-tablet-bt {
+       display: flex;
+       flex-direction: row-reverse;
+     }
+     .header-menu-open {
+       padding-right: 32px;
+     }
+   }
+
+
+
+    /******* header desktop min-width:1200 *******/
+
+
+   @media screen and (min-width:1200px){
+   
+     .page-header {
+       padding-top: 18px;
+     }
+   
+     .header-menu-open {
+       display: none;
+     } 
+     .header-nav {
+       margin-left: 308px;
+       margin-right: auto;
+       margin-bottom: 13px;
+     }
+   
+     .header-nav-list {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+     }
+   
+    .header-nav-item {
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 1.25;
+   
+     align-items: center;
+     color: var(--color-text-white);
+     }
+     .header-nav-item:hover,
+     .header-nav-item:focus {
+       color: #F8D24E;;
+     }
+
+     .logo-ice-mob {
+       width: 55px;
+       height: 55px;
+     }
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   

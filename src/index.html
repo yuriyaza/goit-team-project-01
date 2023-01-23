@@ -15,8 +15,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script type="module" src="./index.js"></script>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <include src="./partials/header.html"></include>
@@ -24,8 +23,12 @@
       <include src="./partials/sections/hero.html"></include>
       <include src="./partials/sections/products.html"></include>
       <include src="./partials/sections/about.html"></include>
-      <include src="./partials/sections/gallery.html"></include>
-      <include src="./partials/sections/reviews.html"></include>
+      <div class="wrapper-swiper-sections">
+        <div class="container-wrapper-swiper-sections">
+          <include src="./partials/sections/gallery.html"></include>
+          <include src="./partials/sections/reviews.html"></include>
+        </div>
+      </div>
       <include src="./partials/sections/contacts.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
@@ -35,5 +38,10 @@
     <include src="./partials/modals/read-more.html"></include>
     <include src="./partials/modals/location.html"></include>
     <include src="./partials/modals/franchise.html"></include>
+
+    <script type="module" src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal-multi-window.js"></script>
   </body>
 </html>

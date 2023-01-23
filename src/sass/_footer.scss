@@ -1,10 +1,356 @@
 // Приклад для CSS
 // Нижче добавляємо свої класи
-
 .footer {
-  width: 500px;
-  height: 50px;
-  margin-bottom: 30px;
-  background-color:bisque;
-  border: 1px solid black;
+    background-color: #84A178;
+}
+
+@media screen and  (min-width: 320px) and (max-width:479px){
+  .footer_ice_cream {
+    display: none;
+  }
+  .footer_tablet {
+    display: none;
+  }
+  .footer_desctop {
+    display: none;
+  }
+  
+  .footer_mobile_container {
+    display: block;
+    min-width: 320px;
+    height: 372px;
+    margin: 0;
+    padding: 0;    
+    margin-bottom: 20px;
+  }
+.text 
+{
+  width: 234px;
+  height: 134px;
+  margin-left: 20px;
+}
+.homemade {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #FCFCFC;
+  margin-bottom: 16px;
+ 
+}
+.passion {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #FCFCFC;
+  
+}
+.social_media_mobile_footer_icons {
+  margin-top: 60px;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.mobile_contact_footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+  gap: 1px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+.mobile_ffc_footer {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #131313;
+  
+}
+.mobile_tel_footer 
+{
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #FCFCFC
+  }
+.underline {
+  max-width: 150px;
+  height: 42px;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #7A7A7A;
+  display: flex;
+  justify-content: space-around;
+       
+}
+}
+@media screen and  (min-width: 480px) and (max-width:767px) {
+  .footer_mobile {
+    display: none;
+  }
+  .footer_tablet {
+    display: none;
+  }
+  .footer_desctop {
+    display: none;
+  }
+  .footer_ice_cream_container {
+    
+    display: block;
+    min-width: 480px;
+    height: 270px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 24px;
+  }
+  .text {
+    max-width: 234px;
+    max-height: 134px;
+
+  }
+.homemade {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #FCFCFC;
+  margin-bottom: 16px;
+}
+.passion {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2;
+  color: #FCFCFC;
+}
+.social_media_mobile_footer_icons {
+  margin-top: 60px;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.mobile_contact_footer {
+  display: flex;
+  justify-content: end;
+  margin-top: 20;
+  margin-bottom: 40px;
+}
+.mobile_ffc_footer {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #131313;
+  padding-right: 2px;
+}
+.mobile_tel_footer {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #FCFCFC
+}
+.line_footer {
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 150px;
+  height: 42px;
+  margin-top: 10px;
+  
+}
+.footerline {
+  margin: 0;
+  max-width: auto;
+  margin-top: 40px;
+}
+.underline {
+
+  border-top: #E1E1E1;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #7A7A7A;
+  margin-bottom: 24px;
+  
+}
+}
+@media screen and  (min-width: 768px) and (max-width: 1199px) {
+  .footer_mobile {
+    display: none;
+  }
+  .footer_desctop {
+    display: none;
+  }
+  .footer_ice_cream {
+    display: none;
+  }
+  
+.homemade {
+  width: 352px;
+  height: 57px;
+  margin: 0;
+  margin-left: 33px;
+  margin-bottom: 8px;
+  
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #FCFCFC;
+  margin-bottom: 8px;
+}
+.footer_wps {
+  min-width: 703px;
+  max-height: 118px;
+  margin: 0;
+  padding: 0;
+  padding-left: 33px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  
+}
+.passion {
+  width: 263px;
+  height: 118px;
+  
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #FCFCFC;
+}
+.social_media_mobile_footer_icons {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+}
+
+.mobile_contact_footer {
+   margin-top: 34px;
+}
+.mobile_ffc_footer {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #131313;
+  padding-right: 2px;
+}
+.mobile_tel_footer {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #FCFCFC
+}
+.footerline {
+  border-top-color: #E1E1E1 ;
+  max-width: 100%;
+  margin: 0;
+  margin-top: 32px;
+}
+.underline {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #7A7A7A;
+  margin-top: 12px;
+}
+}
+
+@media screen and  (min-width: 1200px) {
+  .footer_mobile {
+    display: none;
+  }
+  .footer_tablet {
+    display: none;
+  }
+  .footer_ice_cream {
+    display: none;
+  }
+  .footer_desctop {
+    min-width: 1168px;
+    height: 214px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-bottom: 12px;
+  }
+  .footer_desctop_container {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    height: 122px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: flex-end;
+  }
+
+.text {
+  min-width: 504px;
+  height: 122px;
+  margin: 0;
+  }
+.homemade {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #FCFCFC;
+  margin-bottom: 14px;
+}
+.passion {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 1.2;
+  color: #FCFCFC;
+}
+.social_media_mobile_footer_icons {
+  padding-top: 18px;
+  display: flex;
+  text-align: end;
+  gap: 30px;
+}
+
+.mobile_contact_footer {
+  display: flex;
+  padding-top: 35;
+  
+  
+}
+.mobile_ffc_footer {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #131313;
+  padding-right: 3px;
+}
+.mobile_tel_footer {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #FCFCFC;
+  
+}
+.footerline {
+  border-top-color: #E1E1E1 ;
+  width: 100%;
+  margin: 0;
+  margin-top: 60;
+}
+.underline {
+ 
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #7A7A7A;
+  display: flex;
+  justify-content: center;
+  
+}
 }
