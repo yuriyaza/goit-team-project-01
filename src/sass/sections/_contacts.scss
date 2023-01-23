@@ -160,7 +160,7 @@
   }
   .contacts-items {
     flex-basis: calc((100% - 32px) / 3); 
-    min-width: 224px;
+    max-width: 224px;
     height: 537px;
   } 
   .category {
