@@ -2,16 +2,14 @@
 // Нижче добавляємо свої класи
 
 .modal-product-card {
-  position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: relative;
+    
   width: 280px;
   height: 990px;
   background: #FCFCFC;
   border: 2px solid #F8D24E;
   border-radius: 10px;
-  margin: 0 auto;
+  
   padding: 30px;
 }
 
@@ -146,6 +144,17 @@ font-style: normal;
 font-weight: 600;
 font-size: 12px;
 line-height: 15px;    
+transition-property: background ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.form-button:hover {
+  background: #0A8817;
+}
+
+.form-button:focus {
+  color: #FCFCFC;
 }
 .product-modal-text { 
   font-family: 'Seymour One';
