@@ -2,7 +2,10 @@
 // Нижче добавляємо свої класи
 
 .modal-product-card {
-  position: relative;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   width: 280px;
   height: 990px;
   background: #FCFCFC;
@@ -67,6 +70,8 @@ font-style: normal;
   width: 224px;
   padding-left: 12px;
   padding-top: 8px;
+   outline: transparent;
+   resize: none;
   
 }
 
@@ -145,27 +150,27 @@ line-height: 15px;
 
 .cream {
   position: absolute;
-    top: -50%;
+    top: -40%;
   
   background-image: url(../../images/buy-now-modal-produkt-card/kelsey-curtis-min.png);
   width: 132px;
-  height: 132px;
+  height: 139px;
 }
 
 .coffee{
   position: absolute;
-    top: -50%;
+    top: -40%;
   background-image: url(../../images/buy-now-modal-produkt-card/pariwat-pannium-min.png);
   width: 132px;
-  height: 132px;
+  height: 139px;
 }
 
 .milkshake {
   position: absolute;
-    top: -50%;
+    top: -40%;
   background-image: url(../../images/buy-now-modal-produkt-card/victor-rutka-min.png);
   width: 132px;
-  height: 132px;
+  height: 139px;
 }
 
 .check-input:checked + .cream-check-box {
@@ -235,3 +240,49 @@ line-height: 15px;
     top: 12px;
     right: 12px;
 }
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center ;
+
+}
+
+@media screen and (min-width : 768px) {
+   .product-card { 
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+   }
+
+   .modal-product-card {
+    width: 568px;
+    height: 644px;
+   }
+
+   .check {
+    margin-bottom: 0;
+    margin-right: 32px;
+   }
+   .check:last-child {
+    margin: 0;
+   }
+
+   .last-check {
+    margin-bottom: 0;
+   }
+   .form {
+    margin-top: 0;
+   }
+   .product-modal-text {
+    margin-bottom: 103px;
+   }
+
+   .form-input {
+    width: 362px;
+   }
+   .form-textarea {
+    width: 362px;
+   }
+}
+  
