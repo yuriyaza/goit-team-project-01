@@ -24,7 +24,7 @@
 .reviews-text {
   width: 280px;
   height: 256px;
-  padding: 40px 35px 40px 35px;
+  padding: 35px 40px 35px 40px;
   margin: 0 auto 32px auto;
   background: #84A178;
   border-radius: 10px;
@@ -47,6 +47,13 @@
   text-align: center;
   color: #131313;
   margin-bottom: 22px;
+}
+@media screen and (min-width: 1200px) {
+  .reviews-text {
+    width: 968px;
+    height: 138px;
+    padding: 45px 75px 45px 75px;
+  }
 }
 
 
