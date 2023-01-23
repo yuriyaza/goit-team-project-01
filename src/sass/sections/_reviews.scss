@@ -45,18 +45,25 @@
   color: #131313;
   margin-bottom: 22px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .reviews-text {
     width: 280px;
     height: 256px;
     padding: 35px 40px 35px 40px;   
   }
 }
+@media screen and (min-width: 768px) {
+  .reviews-text {
+    width: 705px;
+    height: 138px;
+    padding: 28px 80px 28px 80px;   
+  }
+}
 @media screen and (min-width: 1200px) {
   .reviews-text {
     width: 968px;
     height: 138px;
-    padding: 45px 75px 45px 75px;
+    padding: 43px 109px 43px 109px;
   }
 }
 
