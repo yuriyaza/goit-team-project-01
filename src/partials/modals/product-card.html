@@ -1,5 +1,11 @@
-<div class="backdrop ">
-  <div class="modal-product-card">
+<div class="overlay js-overlay-modal">
+  <div class="modal modal-product-card" data-modal="product-card">
+
+    <button type="button" class="product-close-button modal-button-close js-modal-close">
+      <svg width="12px" height="12px">
+        <use href="/images/sprite.svg#icon-modal-X"></use>
+      </svg>
+    </button>
 
     <!-- Приклад для HTML -->
     <!-- Замість цього <div> пишемо свій код -->
@@ -9,38 +15,38 @@
 
     <label class="check">
       <div class="cream"></div>
-      <input type="checkbox" name="product" value="ice cream" class="check-input" checked />
-      <span class="check-box"></span>
-      ICE CREAM
+      <input type="checkbox" name="product" value="ice cream" class="check-input"  />
+      <span class="cream-check-box"></span>
+       <span class="cream-text">ICE CREAM</span>  
     </label> 
   
      <label class="check">
       <div class="coffee"></div>
-      <input type="checkbox" name="product" value="ice coffee" class="check-input" checked />
-      <span class="check-box"></span>
-      ICE COFFEE
+      <input type="checkbox" name="product" value="ice coffee" class="check-input"  />
+      <span class="coffee-check-box"></span>
+       <span class="coffee-text"> ICE COFFEE</span>  
      </label> 
   
-     <label class="check">
+     <label class="last-check">
       <div class="milkshake"></div>
-      <input type="checkbox" name="product" value="milkshake" class="check-input" checked />
-      <span class="check-box"></span>
-      MILKSHAKE
+      <input type="checkbox" name="product" value="milkshake" class="check-input"  />
+      <span class="shake-check-box"></span>
+      <span class="shake-text">MILKSHAKE</span>
      </label>
 
     
       <div class="form-field">
-     <label for="name" class="form-label">Name</label>
-     <input type="text" id="name" class="form-input">
+     <label for="name" class="form-label">  </label>
+     <input type="text" id="name" class="form-input" placeholder="Name" required pattern="[a-z]{1,15}">
       </div>
 
      <div class="form-field">
-     <label for="phone" class="form-label">Phone</label>
-     <input type="tel" id="phone" class="form-input">
+     <label for="phone" class="form-label">  </label>
+     <input type="tel" id="phone" class="form-input" placeholder="Phone" required pattern="\+?[0-9\s\-\(\)]+">
      </div>
-     <div class="form-field">
-     <label for="comment" class="form-label">Comment</label>
-     <textarea name="comment" id="comment"  rows="4" class="form-textarea"></textarea>
+     <div class="textarea-form-field">
+     <label for="comment" class="textarea-form-label">  </label>
+     <textarea name="comment" id="comment"  rows="4" class="form-textarea" placeholder="Comment"></textarea>
      </div>
      <button type="submit" class="form-button"> Submit</button>
     </form>
