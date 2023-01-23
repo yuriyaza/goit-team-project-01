@@ -1,56 +1,53 @@
-
-
-.page-header {
+/******* загальні*******/
+  .page-header {
+   z-index: 200;
     padding-top: 12px;
-    padding-bottom: 0;
-    background-color:  #84A278; ;
-   
+    padding-bottom: 10px;
+    background-color:  #84A278; 
+    position: fixed;
+    width: 100%;
+
+
    }
-   
+
    .page-heder-container {
      display: flex;
      align-items: flex-end;
      justify-content: space-between;
    }
-   
-   .logo-ice-mob {
-     width: 40px;
-     height: 37px;
-     display: flex;
-     padding: 0;
-     margin: 0;
-     line-height: 0;
+   .logo-ice {
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
    }
    
+ 
    .header-menu-open {
+    background-color: transparent;
      border: none;
      margin: 0;
      padding: 0;
      line-height: 0;
+  
    }
-   
+  
    
     /******* header-mobile-menu*******/
    
      
    .header-menu {
+    z-index: 50;
      display: flex;
      position: fixed;
-     z-index: 1000;
      top: 0;
      right: 0;
      width: 320px;
-     // max-height: 600px;
      height: 100vh;
      overflow-y: auto;
    
      background: #84A178;
 
-
-     transition-property: background-color;
-     transition-duration: 250ms;
-     transition-timing-function: var(--timing-function);
-   
      opacity: 0;
      visibility: hidden;
      pointer-events: none;
@@ -102,7 +99,18 @@
        padding-right: 32px;
      }
    }
+      @media screen and (max-width:480px){
+      .item-none{
+        display: none;
+      }
+      }
+
    
+    /******* header-mobile-menu*******/
+
+       
+    /******* header-mobile*******/
+
    .menu-logo{
      margin-top: 12px;
    
@@ -123,10 +131,11 @@
      fill: var(--color-text-white);
      border: none;
      padding: 0;
+     background-color: transparent;
    
-     transition-duration: 250ms;
+     transition-duration: 500ms;
      transition-timing-function: var(--timing-function);
-   
+     
      @media screen and (min-width: 480px) {
        top: 20px;
      }
@@ -175,76 +184,73 @@
      }
    }
    
-   .header-menu-item:hover,
-   .header-menu-item:focus {
-     color: #131313;
-   }
+
    
    .bt-buy-now {
      width: 152px;
      height: 42px;
      left: 0px;
      top: 0px;
-   
+      border: none;
      background: #F8D24E;
      border-radius: 10px;
      display: flex;
      align-items: center;
      justify-content: center;
      margin-top: auto;
-   
-     transition-property: background-color;
-     transition-duration: 250ms;
-     transition-timing-function: var(--timing-function);
-   
-     @media screen and (min-width:480px){
-       z-index: 10;
-       // opacity: 0;
-       // visibility: visible;
-     }
-   
-     // @media screen and (min-width:768px){
-     //   display: none;
-     // }
-   }
-   
-   .bt-text {
+     margin-left: auto;
+     margin-right: auto;
+
      font-weight: 600;
      font-size: 14px;
      line-height: 1.2;
      display: flex;
      align-items: center;
      text-align: center;
-     margin-right: 4px;
+     gap: 4px;
      color: #000000;
+   
+     transition-property: background-color;
+     transition-duration: 250ms;
+     transition-timing-function: var(--timing-function);
+
    }
    
-   .bt-buy-now:hover,
-   .bt-buy-now:focus {
-     color: #131313;
+ 
+   .bt-buy-now:hover{
+    background: #0A8817;
+
    }
    
+   .bt-buy-now:focus{
+    background: #0A8817;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+   }
+
    
-   // .menu-logo {
-   //   z-index: 100;
-   // }
-   
+   .bt-buy-now:disabled {
+    background: #ABABAB;
+ 
+   }
+
    /******* mobile-menu*******/
+
+
    @media screen and (min-width: 480px){
     .logo-ice-mob {
        width: 48px;
        height: 44px;
      }
-   
    }
+
+
+    /******* header desktop min-width:768 *******/
    
-   
-   @media screen and (max-width:767px){
-   
+   @media screen and (max-width:768px){   
      .nav_bt-buy-now{
        display: none;
      } 
-   
    }
    
    @media screen  and (max-width:1200px){
@@ -268,7 +274,12 @@
        padding-right: 32px;
      }
    }
-   
+
+
+
+    /******* header desktop min-width:1200 *******/
+
+
    @media screen and (min-width:1200px){
    
      .page-header {
@@ -278,7 +289,7 @@
      .header-menu-open {
        display: none;
      } 
-     .nav-menu {
+     .header-nav {
        margin-left: 308px;
        margin-right: auto;
        margin-bottom: 13px;
@@ -290,7 +301,7 @@
       gap: 28px;
      }
    
-   .header-nav-item {
+    .header-nav-item {
      font-weight: 700;
      font-size: 16px;
      line-height: 1.25;
@@ -298,6 +309,11 @@
      align-items: center;
      color: var(--color-text-white);
      }
+     .header-nav-item:hover,
+     .header-nav-item:focus {
+       color: #F8D24E;;
+     }
+
      .logo-ice-mob {
        width: 55px;
        height: 55px;
