@@ -150,27 +150,34 @@ line-height: 15px;
 
 .cream {
   position: absolute;
-    top: -40%;
+  top: -50%;
+    left: -53%;
+    transform: translateX(50px);
   
   background-image: url(../../images/buy-now-modal-produkt-card/kelsey-curtis-min.png);
-  width: 132px;
-  height: 139px;
+  width: 174px;
+    height: 174px;
 }
 
 .coffee{
   position: absolute;
-    top: -40%;
+  
   background-image: url(../../images/buy-now-modal-produkt-card/pariwat-pannium-min.png);
-  width: 132px;
-  height: 139px;
+  width: 174px;
+    height: 174px;
+  top: -50%;
+    left: -53%;
+    transform: translateX(50px);
 }
 
 .milkshake {
   position: absolute;
-    top: -40%;
+  top: -50%;
+    left: -53%;
+    transform: translateX(50px);
   background-image: url(../../images/buy-now-modal-produkt-card/victor-rutka-min.png);
-  width: 132px;
-  height: 139px;
+  width: 174px;
+    height: 174px;
 }
 
 .check-input:checked + .cream-check-box {
