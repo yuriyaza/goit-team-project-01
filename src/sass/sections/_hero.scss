@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .hero {
   display: block;
   width: auto;
@@ -231,9 +234,7 @@
     color: #fcfcfc;
     margin-bottom: 12px;
   }
-  // .hero_text-link:hover .hero-text {
-  //   border: 1px solid #abdd96;
-  // }
+
   .hero_text-link > svg {
     fill: #fcfcfc;
   }
@@ -252,7 +253,7 @@
     width: 152px;
     bottom: 18px;
     left: 0;
-    z-index: 1000;
+    z-index: 10;
     animation: ice-cream 60s linear infinite;
   }
 
@@ -303,15 +304,27 @@
     left: 245px;
     bottom: 95px;
   }
+
   .hero-text {
     font-size: 14px;
     margin-bottom: 24px;
     width: 200px;
     height: 80px;
+    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1);
   }
-  // .hero_text-link:hover .hero-text {
-  //   border: 1px solid #48613d;
-  // }
+  .hero_text-link > svg:hover > .hero-text {
+    scale: 1.2;
+  }
+  .hero_text-link > svg {
+    transform: scale(1);
+    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero_text-link > svg:hover {
+    scale: 1.1;
+    fill: #f8d24e;
+  }
   .many-ice-cream {
     width: 225px;
     bottom: 65px;
