@@ -1,8 +1,8 @@
 /******* загальні*******/
   .page-header {
-   z-index: 200;
+   z-index: 50;
     padding-top: 12px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     background-color:  #84A278; 
     position: fixed;
     width: 100%;
@@ -37,7 +37,7 @@
    
      
    .header-menu {
-    z-index: 50;
+    z-index: 60;
      display: flex;
      position: fixed;
      top: 0;
@@ -53,7 +53,8 @@
      pointer-events: none;
      transform: translateX(100%);
      transition: var(--timing-function);
-
+     transition-property: transform;
+     transition-duration: .25s;
 
      @media screen  and (min-width: 480px) { 
        width: 480px;
@@ -71,12 +72,14 @@
    }
    
    .header-menu.is-open {
-     opacity: 1;
-     visibility: visible;
-     pointer-events: auto;
-     transform: translateX(0);
-   }
-   
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+
+
    .header-menu_container{
      display: flex;
      flex-direction: column;
@@ -133,9 +136,11 @@
      padding: 0;
      background-color: transparent;
    
-     transition-duration: 500ms;
-     transition-timing-function: var(--timing-function);
-     
+     transition-property: transform;
+     transition-duration: .25s;
+     transform: translateX(0);
+     transition: stroke 250ms var(--timing-function);
+
      @media screen and (min-width: 480px) {
        top: 20px;
      }
@@ -184,8 +189,12 @@
      }
    }
    
-
+   .header-menu-item:hover,
+   .header-menu-item:focus {
+     color: #131313;
    
+   }
+
    .bt-buy-now {
      width: 152px;
      height: 42px;
@@ -241,6 +250,7 @@
     .logo-ice-mob {
        width: 48px;
        height: 44px;
+ 
      }
    }
 
@@ -256,12 +266,16 @@
    @media screen  and (max-width:1200px){
      .header-nav-list {
        display: none;
+      
      } 
+
+   
    }
    
    @media screen and (min-width:768px) and (max-width:1200px){
      .page-header {
        padding-top: 24px;
+       padding-bottom: 24px;
      }
      .header-nav-list {
        display: none;
@@ -284,6 +298,7 @@
    
      .page-header {
        padding-top: 18px;
+       padding-bottom: 28px;
      }
    
      .header-menu-open {
@@ -309,7 +324,7 @@
      align-items: center;
      color: var(--color-text-white);
      }
-     .header-nav-item:hover,
+     .header-nav-item:hover ,
      .header-nav-item:focus {
        color: #F8D24E;;
      }
