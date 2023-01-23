@@ -240,3 +240,49 @@ line-height: 15px;
     top: 12px;
     right: 12px;
 }
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center ;
+
+}
+
+@media screen and (min-width : 768px) {
+   .product-card { 
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+   }
+
+   .modal-product-card {
+    width: 568px;
+    height: 644px;
+   }
+
+   .check {
+    margin-bottom: 0;
+    margin-right: 32px;
+   }
+   .check:last-child {
+    margin: 0;
+   }
+
+   .last-check {
+    margin-bottom: 0;
+   }
+   .form {
+    margin-top: 0;
+   }
+   .product-modal-text {
+    margin-bottom: 103px;
+   }
+
+   .form-input {
+    width: 362px;
+   }
+   .form-textarea {
+    width: 362px;
+   }
+}
+  
