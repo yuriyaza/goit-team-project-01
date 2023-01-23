@@ -1,0 +1,59 @@
+<div class="overlay js-overlay-modal"></div>
+<div class="modal" data-modal="franchise">
+  <button class="modal-button-close js-modal-close" type="button">
+    <svg width="11" height="11">
+      <use href="../images/sprite.svg#icon-mobile-modal-X"></use>
+    </svg>
+  </button>
+  <h2 class="modal-franchise-title">
+    Thank you for your interest in owning an Ice Cream shop
+  </h2>
+  <p class="modal-franchise-description">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+  <form class="modal-franchise-form">
+    <label class="modal-franchise-fieldset">
+      <input
+        class="modal-franchise-input"
+        type="text"
+        name="client-name"
+        placeholder="Name"
+        pattern="^[a-zA-Zа-яА-Я]+\s[a-zA-Zа-яА-Я]+$"
+        title="Username must contain two words separated by space."
+        required
+      />
+    </label>
+    <label class="modal-franchise-fieldset">
+      <input
+        class="modal-franchise-input"
+        type="tel"
+        name="client-phone"
+        placeholder="Phone"
+        pattern="^[0-9]+$"
+        title="Phone must contain only numeric characters."
+        required
+      />
+    </label>
+    <label class="modal-franchise-fieldset">
+      <input
+        class="modal-franchise-input"
+        type="email"
+        name="client-email"
+        placeholder="Email"
+        required
+      />
+    </label>
+    <label class="modal-franchise-fieldset">
+      <textarea
+        class="modal-franchise-multyinput"
+        name="client-comment"
+        placeholder="Comment"
+      ></textarea>
+    </label>
+    <button class="modal-franchise-button" type="submit">Submit</button>
+  </form>
+</div>
