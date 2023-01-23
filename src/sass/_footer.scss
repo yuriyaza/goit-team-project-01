@@ -14,14 +14,14 @@
   .footer_desctop {
     display: none;
   }
-  
+ 
   .footer_mobile_container {
     display: block;
     min-width: 320px;
     height: 372px;
     margin: 0;
     padding: 0;    
-    margin-bottom: 20px;
+    background-color: transparent;
   }
 .text 
 {
@@ -74,6 +74,10 @@
   font-size: 12px;
   line-height: 1.8;
   color: #FCFCFC
+  }
+  .footerline {
+    margin: 0;
+    padding: 0;
   }
 .underline {
   max-width: 150px;
