@@ -3,7 +3,7 @@
 }
 .about-container {
   padding-top: 61px;
-  padding-bottom: 68px;
+  padding-bottom: 32px;
   position: relative;
 }
 .about-label, .about-title, .about-description, .about-item-title, .about-item-desription {
@@ -149,7 +149,6 @@
 @media screen and (min-width: 480px) {
   .about-container {
     padding-top: 60px;
-    padding-bottom: 81px;
   }
   .about-img {
     left: 100px;
@@ -170,7 +169,7 @@
 
 @media screen and (min-width: 768px) {
   .about-container {
-    padding-bottom: 204px;
+    padding-bottom: 60px;
   }
   .about-container > label {
     font-weight: 800;
@@ -246,7 +245,7 @@
 
 @media screen and (min-width: 1200px) {
   .about-container {
-    padding-bottom: 178px;
+    padding-bottom: 80px;
   }
   .about-container > label {
     font-size: 30px;
