@@ -107,6 +107,9 @@ font-style: normal;
   
   border-radius: 10px;
   border: 2px solid #96AF8C;
+  transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
 .coffee-check-box{
   display: block;
@@ -115,6 +118,9 @@ font-style: normal;
   
   border-radius: 10px;
   border: 2px solid #EFD478;
+  transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
 
 }
 .shake-check-box{
@@ -124,6 +130,9 @@ font-style: normal;
   
   border-radius: 10px;
   border: 2px solid #D6936D;
+  transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
 
 }
 
