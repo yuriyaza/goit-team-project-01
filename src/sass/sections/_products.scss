@@ -1,3 +1,64 @@
+// background
+@media (min-width: 480px) {
+  .products {
+    background-image: url("../../images/mobile/background-mobile/Backgroud_mobile-min.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .products {
+      background-image: url("../../images/mobile/background-mobile/Backgroud_mobile@2x-min.jpg");
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .products {
+    background-image: url("../../images/mobile/background-mobile/Backgroud_mobile-min.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .products {
+      background-image: url("../../images/mobile/background-mobile/Backgroud_mobile@2x-min.jpg");
+    }
+  }
+}
+@media (min-width: 768px) {
+  .products {
+    background-image: url('../../images/tablet/background-tablet/Background_tablet-min.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .products {
+      background-image: url('../../images/tablet/background-tablet/Background_tablet@2x-min.jpg');
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .products {
+    background-image: url('../../images/desktop/background-desctop/Backgroud_desktop-min.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .products {
+      background-image: url('../../images/desktop/background-desctop/Backgroud_desktop@2x-min.jpg');
+    }
+  }
+}
+
+
 
 .products-wraper-lab {
   font-weight: 800;
@@ -43,8 +104,6 @@
 @media (min-width: 768px) {
   .products-wraper-lab {
     font-size: 22px;
-
-
   }
 
   .products-wraper-titl {
@@ -83,35 +142,6 @@
   width: 100%;
 }
 
-@media (min-width: 480px) {
-  .products {
-    background-image: url("../../images/mobile/background-mobile/Backgroud_mobile-min.jpg");
-  }
-
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
-    .products {
-      background-image: url("../../images/mobile/background-mobile/Backgroud_mobile@2x-min.jpg");
-    }
-  }
-}
-@media (max-width: 480px) {
-  .products {
-    background-image: url("../../images/mobile/background-mobile/Backgroud_mobile-min.jpg");
-  }
-
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
-    .products {
-      background-image: url("../../images/mobile/background-mobile/Backgroud_mobile@2x-min.jpg");
-    }
-  }
-}
-
 .products-btm {
   position: absolute;
   cursor: pointer;
@@ -121,6 +151,10 @@
     margin: 0 auto;
     border: none;
     background-color: transparent;
+}
+.products-btm:hover,
+.products-btm:focus{
+  fill: var(--color-button-green)
 }
 .products {
   background-size: cover;
@@ -324,20 +358,7 @@
 }
 
 
-@media (min-width: 768px) {
-  .products {
-    background-image: url('../../images/tablet/background-tablet/Background_tablet-min.jpg');
-  }
 
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
-    .products {
-      background-image: url('../../images/tablet/background-tablet/Background_tablet@2x-min.jpg');
-    }
-  }
-}
 
 
 @media (min-width: 768px) {
@@ -418,21 +439,6 @@
   }
 }
 
-
-@media (min-width: 1200px) {
-  .products {
-    background-image: url('../../images/desktop/background-desctop/Backgroud_desktop-min.jpg');
-  }
-
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
-    .products{
-      background-image: url('../../images/desktop/background-desctop/Backgroud_desktop@2x-min.jpg');
-    }
-  }
-}
 
 @media (min-width: 1200px) {
   .products-green::before {
