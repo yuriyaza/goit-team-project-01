@@ -49,6 +49,8 @@
   background-color: var(--color-button-yellow);
   border-radius: 10px;
   border-color: transparent;
+  
+
 }
 .contacts-locations:hover {
   background-color: var(--color-button-green);
@@ -224,6 +226,7 @@
     align-items: center;
     justify-content: space-between;
     top: -128px;
+    gap: 32px;
   }
   .contacts-items {
     flex-basis: calc((100% - 64px) / 3); 
@@ -249,7 +252,7 @@
     margin-bottom: 12px;
   }
   .adress-cafe {
-    max-width: 288px;
-    max-height: 50px;
+    min-width: 288px;
+    min-height: 50px;
   }
 }
