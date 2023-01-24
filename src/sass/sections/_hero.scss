@@ -1,9 +1,346 @@
-// Приклад для CSS
-// Нижче добавляємо свої класи
-
+html {
+  scroll-behavior: smooth;
+}
 .hero {
-  width: 500px;
-  height: 50px;
-  background-color: moccasin;
-  border: 1px solid black;
+  display: block;
+  width: auto;
+  background-color: #84a178;
+  height: 502px;
+  padding-top: 98px;
+  overflow: hidden;
+}
+.hero-bgimage {
+  width: 320px;
+  background-image: url(../../images/mobile/Hero-header/tochki-mob320-min.png);
+  background-size: 320px 50px;
+  background-repeat: no-repeat;
+  background-position: 0 354px;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero-bgimage {
+    background-image: url(../../images/mobile/Hero-header/tochki-mob320@2x-min.png);
+  }
+}
+.hero-wraper {
+  height: 404px;
+  width: 280px;
+  position: relative;
+}
+.hero_right-block {
+  display: none;
+}
+.hero-title {
+  width: 247px;
+  height: 97px;
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 32px;
+  margin-right: 0;
+  animation: show 0.01s forwards, pop-word 1.5s forwards;
+  animation-timing-function: cubic-bezier(0.02, 1.23, 0.53, 1.16);
+  animation-delay: 500ms;
+  opacity: 0;
+
+  transform: rotateX(120deg);
+  transform-origin: 50% 100%;
+}
+.hero-title-upper {
+  font-size: 34px;
+  line-height: 96.5%;
+}
+@keyframes pop-word {
+  to {
+    transform: rotateX(0);
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+}
+.hero_button-products {
+  background-color: #84a178;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #000000;
+  padding: 11px 26px;
+  margin-right: 12px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero_button-about {
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  text-decoration-line: underline;
+  border-radius: 8px;
+  color: #f8d24e;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero_button-products:hover {
+  border: 2px solid #0a8817;
+}
+.hero_button-products:focus {
+  border: 2px solid #0a8817;
+  color: #fcfcfc;
+}
+
+.hero_button-about:hover {
+  color: #0a8817;
+}
+
+.hero_button-about:focus {
+  color: #fcfcfc;
+}
+
+.hero_text-block {
+  display: none;
+}
+
+.many-ice-cream {
+  display: none;
+}
+
+.hero_main-img {
+  position: absolute;
+  width: 177px;
+  bottom: 0;
+  left: 65px;
+  animation: ice-cream-main 1000ms cubic-bezier(0, 0.61, 0.85, 0.75);
+}
+@keyframes ice-cream-main {
+  from {
+    transform: translateY(+100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+.hero_dots-img {
+  position: absolute;
+  width: 320px;
+  bottom: 0;
+  left: -20px;
+  z-index: 0;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    height: 415px;
+  }
+
+  .hero-bgimage {
+    width: 480px;
+    background-position: 157px 266px;
+  }
+  .hero-wraper {
+    height: 317px;
+    width: 100%;
+  }
+  .hero-title {
+    margin-bottom: 24px;
+  }
+  .hero_main-img {
+    width: 218px;
+    left: auto;
+    right: 10px;
+  }
+  .hero_dots-img {
+    width: 330px;
+    left: auto;
+    right: -20;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 415px;
+    padding-top: 80px;
+  }
+  .hero-bgimage {
+    background-image: url(../../images/tablet/Hero-header/tochki-tab-min.png);
+    background-size: 768px 68px;
+    width: 768px;
+    background-position: 0 265px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-bgimage {
+      background-image: url(../../images/tablet/Hero-header/tochki-tab@2x-min.png);
+    }
+  }
+  .hero-wraper {
+    height: 335px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero_right-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+  .cafe-counter,
+  .ftracks-counter {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;
+    margin-bottom: 4px;
+  }
+
+  .hero_cafe-counter,
+  .hero_ftracks-counter {
+    font-size: 8px;
+    line-height: 1.25;
+    color: #fcfcfc;
+  }
+  .hero_cafe-counter {
+    margin-bottom: 20px;
+    padding-top: 14px;
+  }
+  .hero_text-block {
+    display: block;
+    position: absolute;
+    left: 187px;
+    bottom: 24px;
+  }
+  .hero-text {
+    width: 139px;
+    height: 85px;
+    font-size: 12px;
+    line-height: 1.41;
+    color: #fcfcfc;
+    margin-bottom: 12px;
+  }
+
+  .hero_text-link > svg {
+    fill: #fcfcfc;
+  }
+  @keyframes ice-cream {
+    from {
+      transform: rotate(0);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .many-ice-cream {
+    display: block;
+    position: absolute;
+    width: 152px;
+    bottom: 18px;
+    left: 0;
+    z-index: 10;
+    animation: ice-cream 60s linear infinite;
+  }
+
+  .hero_main-img {
+    width: 268px;
+    left: auto;
+    right: 60px;
+  }
+  .hero_dots-img {
+    width: 768px;
+    left: auto;
+    right: -30;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 664px;
+    padding-top: 118px;
+  }
+  .hero-bgimage {
+    background-image: url(../../images/desktop/Hero-header/tochki-desk-min.png);
+    background-size: 1200px 383px;
+    width: 1200px;
+    background-position: 0 160px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-bgimage {
+      background-image: url(../../images/desktop/Hero-header/tochki-desk@2x-min.png);
+    }
+  }
+  .hero-wraper {
+    height: 546px;
+  }
+  .hero-title {
+    width: 367px;
+    height: 144px;
+    font-size: 38px;
+    margin-bottom: 28px;
+  }
+  .hero-title-upper {
+    font-size: 38px;
+    line-height: 1.27;
+  }
+
+  .hero_text-block {
+    left: 245px;
+    bottom: 95px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+    margin-bottom: 24px;
+    width: 200px;
+    height: 80px;
+    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1);
+  }
+  .hero_text-link > svg:hover > .hero-text {
+    scale: 1.2;
+  }
+  .hero_text-link > svg {
+    transform: scale(1);
+    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero_text-link > svg:hover {
+    scale: 1.1;
+    fill: #f8d24e;
+  }
+  .many-ice-cream {
+    width: 225px;
+    bottom: 65px;
+  }
+  .hero_main-img {
+    width: 456px;
+    left: auto;
+    right: 75px;
+  }
+  .hero_dots-img {
+    width: 1200px;
+    left: auto;
+    right: -15;
+  }
+  .hero_cafe-counter,
+  .hero_ftracks-counter {
+    font-size: 12px;
+  }
 }

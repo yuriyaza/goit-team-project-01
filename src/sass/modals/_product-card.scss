@@ -2,8 +2,312 @@
 // Нижче добавляємо свої класи
 
 .modal-product-card {
-  width: 500px;
-  height: 50px;
-  background-color: coral;
-  border: 1px solid black;
+  
+    
+  width: 280px;
+  height: 990px;
+  background: #FCFCFC;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+  
+  padding: 30px;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center ;
+  margin-top: 80px;
+
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.form-label { 
+ position: absolute;
+ top: 50%;
+ left: 12px;
+ transform: translateY(-50%);
+}
+
+.form-input {
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+  width: 224px;
+  height: 32px;
+  padding-left: 12px;
+  outline: transparent;
+  
+}
+.form-input::placeholder {
+  font-family: 'Montserrat';
+font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #131313;
+}
+
+.form-input:focus {
+   border: 1px solid #84A178;
+}
+
+.form-input:not(:placeholder-shown):required:invalid {
+  border-color: red;
+}
+
+.form-textarea {
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+  width: 224px;
+  padding-left: 12px;
+  padding-top: 8px;
+   outline: transparent;
+   resize: none;
+  
+}
+
+.form-textarea::placeholder{
+  font-family: 'Montserrat';
+font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #131313;
+}
+
+.check {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  margin-bottom: 82px;
+}
+
+.check-input {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+
+}
+.cream-check-box{
+  display: block;
+  width: 132px;
+  height: 132px;
+  
+  border-radius: 10px;
+  border: 2px solid #96AF8C;
+  transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+.coffee-check-box{
+  display: block;
+  width: 132px;
+  height: 132px;
+  
+  border-radius: 10px;
+  border: 2px solid #EFD478;
+  transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+
+}
+.shake-check-box{
+  display: block;
+  width: 132px;
+  height: 132px;
+  
+  border-radius: 10px;
+  border: 2px solid #D6936D;
+  transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+
+}
+
+.form-button {
+background: #F8D24E;
+border-radius: 10px;
+width: 114px;
+    height: 40px;
+border: none;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;    
+transition-property: background ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.form-button:hover {
+  background: #0A8817;
+}
+
+.form-button:focus {
+  color: #FCFCFC;
+}
+.product-modal-text { 
+  font-family: 'Seymour One';
+   font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cream {
+  position: absolute;
+  top: -50%;
+    left: -53%;
+    transform: translateX(50px);
+  
+  background-image: url(../../images/buy-now-modal-produkt-card/kelsey-curtis-min.png);
+  width: 174px;
+    height: 174px;
+}
+
+.coffee{
+  position: absolute;
+  
+  background-image: url(../../images/buy-now-modal-produkt-card/pariwat-pannium-min.png);
+  width: 174px;
+    height: 174px;
+  top: -50%;
+    left: -53%;
+    transform: translateX(50px);
+}
+
+.milkshake {
+  position: absolute;
+  top: -50%;
+    left: -53%;
+    transform: translateX(50px);
+  background-image: url(../../images/buy-now-modal-produkt-card/victor-rutka-min.png);
+  width: 174px;
+    height: 174px;
+}
+
+.check-input:checked + .cream-check-box {
+  background-color: #96AF8C;
+}
+
+.check-input:checked + .coffee-check-box {
+  background-color: #EFD478;
+}
+
+.check-input:checked + .shake-check-box {
+  background-color: #D6936D;
+}
+
+.cream-text {
+    position: absolute;
+    top: 96px;
+    left: 16px;
+}
+
+.coffee-text {
+    position: absolute;
+    top: 96px;
+    left: 16px;
+}
+.shake-text {
+    position: absolute;
+    top: 96px;
+    left: 16px;
+}
+
+.textarea-form-field {
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.textarea-form-label {
+  position: absolute;
+  top: 20%;
+ left: 12px;
+ transform: translateY(-50%);
+}
+.check:last-child {
+
+  margin-bottom: 31px;
+}
+
+.last-check {
+  margin-bottom: 32px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    position: relative;
+}
+
+.product-close-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    background-color: #FCFCFC;
+    height: 22px;
+    border: none;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center ;
+
+}
+
+@media screen and (min-width : 768px) {
+   .product-card { 
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+   }
+
+   .modal-product-card {
+    width: 568px;
+    height: 644px;
+   }
+
+   .check {
+    margin-bottom: 0;
+    margin-right: 32px;
+   }
+   .check:last-child {
+    margin: 0;
+   }
+
+   .last-check {
+    margin-bottom: 0;
+   }
+   .form {
+    margin-top: 0;
+   }
+   .product-modal-text {
+    margin-bottom: 103px;
+   }
+
+   .form-input {
+    width: 362px;
+   }
+   .form-textarea {
+    width: 362px;
+   }
+}
+  
