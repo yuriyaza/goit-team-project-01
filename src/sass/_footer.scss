@@ -3,6 +3,28 @@
 .footer {
     background-color: #84A178;
 }
+.social_media_mobile_footer_icon
+{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        fill: #84A178;        
+        background-color: #F8D24E;        
+}
+.social_media_mobile_footer_icon:hover,
+.social_media_mobile_footer_icon:focus {
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        margin: px;
+        fill: #FCFCFC;        
+        transition: fill 250ms; 
+}
 
 .social_media_mobile_footer_icon
 {
