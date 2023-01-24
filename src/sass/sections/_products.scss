@@ -327,7 +327,7 @@
   }
 }
 .products {
-  background-size: cover;
+  
   background-position: center;
   background-repeat: no-repeat;
 
@@ -342,7 +342,7 @@
 .products-inner{
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
 }
 
 .products-btm {
@@ -359,7 +359,7 @@
 .products-btm:focus{
   fill: var(--color-button-green)
 }
-
+// 
 
 .products-card-yellow,
 .products-card-orange {
@@ -399,33 +399,34 @@
   width: 200px;
   height: 211px;
   top: 0px;
-  left: 0px;
-  transform: translate(20%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
   background-size: cover;
   background-position: center;
 }
- @media (min-width: 365px){
-  .products-green::before,
-    .products-yellow::before,
-    .products-orange::before {
-      content: "";
-      transform: translate(20%, -50%);
-    }
- }
+//  @media (min-width: 365px){
+//   .products-green::before,
+//     .products-yellow::before,
+//     .products-orange::before {
+//       content: "";
+//       transform: translate(20%, -50%);
+//     }
+//  }
 
 @media (min-width: 480px){
   .products-section {
-      padding: 60px 0px;
+      padding: 0px 80px;
     }
   .products-wraper {
-    padding: 0 80px;
+    padding: 60px 0px;
   }
 .products-card-yellow,
 .products-card-orange {
   position: relative;
   max-width: 320px;
   width: 100%;
+  
 
   padding: 123px 60px 24px;
   border-radius: 24px;
@@ -464,19 +465,19 @@
 .products-yellow::before,
 .products-orange::before {
   content: "";
-  transform: translate(12%, -50%);
+  transform: translate(30%, -50%);
   }
 }
  
- @media (min-width: 624px) {
+//  @media (min-width: 624px) {
 
-   .products-green::before,
-   .products-yellow::before,
-   .products-orange::before {
-     content: "";
-     transform: translate(28%, -50%);
-   }
- }
+//    .products-green::before,
+//    .products-yellow::before,
+//    .products-orange::before {
+//      content: "";
+//      transform: translate(-50%, -50%);
+//    }
+//  }
 
 @media (min-width: 768px) {
   .products-section {
@@ -488,6 +489,7 @@
    flex-direction: row;
     gap: 16px;
     justify-content: space-between;
+    align-items: stretch;
    
   }
 
@@ -504,7 +506,7 @@
   .products-yellow::before,
   .products-orange::before {
 
-    transform: translate(5%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .products-btm {
@@ -541,8 +543,9 @@
     display: block;
     width: 302px;
     height: 318px;
+    
     top: 0;
-    left: 0;
-    transform: translate(7%, -50%);
+    left:50%;
+    transform: translate(-50%, -50%);
   }
 }
