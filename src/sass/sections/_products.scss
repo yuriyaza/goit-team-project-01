@@ -263,6 +263,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 145px;
+  min-width: 270px;
 }
   
 
@@ -282,7 +283,7 @@
   line-height: 176%;
   text-align: center;
   letter-spacing: 0.04em;
-  margin-bottom: 69px;
+  margin-bottom: 40px;
 }
 
 
@@ -294,6 +295,7 @@
   .products-wraper-titl {
     font-size: 34px;
     line-height: 1.26;
+    margin-bottom: 200px;
   }
 
   .products-card-titl {
@@ -311,6 +313,7 @@
   .products-wraper-titl {
     font-size: 36px;
     letter-spacing: 0.06em;
+    margin-bottom: 303px;
   }
 
   .products-card-titl {
@@ -329,8 +332,11 @@
   background-repeat: no-repeat;
 
 }
+.products-wraper{
+  padding: 0 20px ;
+}
 .products-section {
-  padding: 60px 20px;
+  padding: 60px 0;
   width: 100%;
 }
 .products-inner{
@@ -394,17 +400,27 @@
   height: 211px;
   top: 0px;
   left: 0px;
-  transform: translate(12%, -50%);
+  transform: translate(20%, -50%);
   position: absolute;
   background-size: cover;
   background-position: center;
 }
- 
+ @media (min-width: 365px){
+  .products-green::before,
+    .products-yellow::before,
+    .products-orange::before {
+      content: "";
+      transform: translate(20%, -50%);
+    }
+ }
 
 @media (min-width: 480px){
   .products-section {
-      padding: 60px 80px;
+      padding: 60px 0px;
     }
+  .products-wraper {
+    padding: 0 80px;
+  }
 .products-card-yellow,
 .products-card-orange {
   position: relative;
@@ -448,11 +464,19 @@
 .products-yellow::before,
 .products-orange::before {
   content: "";
-  transform: translate(20%, -50%);
+  transform: translate(12%, -50%);
   }
 }
  
+ @media (min-width: 624px) {
 
+   .products-green::before,
+   .products-yellow::before,
+   .products-orange::before {
+     content: "";
+     transform: translate(28%, -50%);
+   }
+ }
 
 @media (min-width: 768px) {
   .products-section {
@@ -460,6 +484,7 @@
   }
 
   .products-inner {
+    display: flex;
    flex-direction: row;
     gap: 16px;
     justify-content: space-between;
@@ -518,6 +543,6 @@
     height: 318px;
     top: 0;
     left: 0;
-    transform: translate(12%, -50%);
+    transform: translate(7%, -50%);
   }
 }
