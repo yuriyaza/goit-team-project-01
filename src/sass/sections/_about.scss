@@ -1,12 +1,12 @@
 .about {
   background-color: var(--color-salt);
+  padding-top: 61px;
+  padding-bottom: 25px;
 }
 .about-container {
-  padding-top: 61px;
-  padding-bottom: 32px;
   position: relative;
 }
-.about-label, .about-title, .about-description, .about-item-title, .about-item-desription {
+.about-label, .about-title, .about-description {
   color: var(--color-text-white);
 }
 .about-container > label {
@@ -35,7 +35,7 @@
   margin: 0 auto;
   display: block;
   position: absolute;
-  top: 240px;
+  top: 180px;
   left: 20px;
   right: 20px;
 }
@@ -53,7 +53,6 @@
 .about-first-description {
   letter-spacing: 0.04em;
   line-height: 21px;
-  margin-bottom: 50px;
 }
 .about-second-description, .about-third-description {
   line-height: 19px;
@@ -87,89 +86,29 @@
   background: var(--color-button-gray);
 }
 .about-first-section {
-  margin-bottom: 50px;
   max-width: 220px;  
   margin: 0 auto;  
-  margin-bottom: 50px;
-}
-.hidden {
-  position: absolute;
-  transform: scale(0);
-}
-.about-item {
-  max-width: 230px;
-  margin: 0 auto;
-}
-.about-item:first-child:before {
-  content: "";
-  background-image: url(../../images/cow.svg);
-  margin: 0 auto;
-  margin-bottom: 16px;
-  display: block;
-  width: 50px;
-  height: 50px;
-  }
-.about-item:nth-child(2):before {
-  content: "";
-  background-image: url(../../images/weight.svg);
-  margin: 0 auto;
-  margin-bottom: 16px;
-  display: block;
-  width: 50px;
-  height: 50px;
-  }
-.about-item:last-child:before {
-  content: "";
-  background-image: url(../../images/ice.svg);
-  margin: 0 auto;
-  margin-bottom: 16px;
-  display: block;
-  width: 50px;
-  height: 50px;
-  }
-.about-item-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  }
-.about-item-desription {
-  text-align: center;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 20px;
-}
-.about-item:not(:last-child) {
-  margin-bottom: 28px;
 }
 
 @media screen and (min-width: 480px) {
-  .about-container {
+  .about {
     padding-top: 60px;
+    padding-bottom: 30px;
   }
   .about-img {
     left: 100px;
     right: 100px;
-  }
-  .about-first-section {
-    margin-bottom: 60px;
   }
   .about-title {
     font-size: 30px;
     line-height: 38px;
     letter-spacing: 0.04em;
   }
-  .about-item:not(:last-child) {
-    margin-bottom: 32px;
-}
   }
 
 @media screen and (min-width: 768px) {
-  .about-container {
-    padding-bottom: 60px;
+  .about {
+    padding-bottom: 40px;
   }
   .about-container > label {
     font-weight: 800;
@@ -185,7 +124,7 @@
     margin-bottom: 80px;
   }
   .about-img {
-    top: 214px;
+    top: 154px;
     left: 32px;
     right: 406px;
     margin: 0;
@@ -194,7 +133,6 @@
   .about-first-section {
     max-width: 336px;
     margin-left: 368px;
-    margin-bottom: 80px;
   }
   .about-description {
     text-align: left;
@@ -244,8 +182,8 @@
   }
 
 @media screen and (min-width: 1200px) {
-  .about-container {
-    padding-bottom: 80px;
+  .about {
+    padding-bottom: 106px;
   }
   .about-container > label {
     font-size: 30px;
@@ -259,14 +197,13 @@
     margin-bottom: 172px;
   }
   .about-img {
-    top: 236px;
+    top: 176px;
     left: 16px;
     right: 693px;
     width: 491px;
   }
   .about-first-section {
     max-width: 463px;
-    margin-bottom: 146px;
     margin-left: 600px;
   }
   .description-list {

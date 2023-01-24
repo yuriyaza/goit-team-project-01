@@ -1,0 +1,128 @@
+
+.advantages {
+    background-color: var(--color-salt);
+    padding-top: 25px;
+    padding-bottom: 32px;
+}
+.about-item-title, .about-item-desription {
+    color: var(--color-text-white);
+  }
+.hidden {
+    position: absolute;
+    transform: scale(0);
+  }
+  .about-item {
+    max-width: 230px;
+    margin: 0 auto;
+  }
+  .about-item:first-child:before {
+    content: "";
+    background-image: url(../../images/cow.svg);
+    margin: 0 auto;
+    margin-bottom: 16px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    }
+  .about-item:nth-child(2):before {
+    content: "";
+    background-image: url(../../images/weight.svg);
+    margin: 0 auto;
+    margin-bottom: 16px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    }
+  .about-item:last-child:before {
+    content: "";
+    background-image: url(../../images/ice.svg);
+    margin: 0 auto;
+    margin-bottom: 16px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    }
+  .about-item-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    }
+  .about-item-desription {
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .about-item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 480px) {
+    .advantages {
+      padding-top: 30px;
+      padding-bottom: 32px;
+    }
+    .about-item:not(:last-child) {
+      margin-bottom: 32px;
+  }
+    }
+@media screen and (min-width: 768px) {
+    .advantages {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .about-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+    .about-item {
+        max-width: 152px;
+        margin: 0;
+    }
+    .about-item:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .about-item:first-child:before, .about-item:nth-child(2):before,  .about-item:last-child:before  {
+        margin-bottom: 32px;
+    }
+    .about-item-title {
+        font-size: 48px;
+        line-height: 59px;
+        margin-bottom: 12px;
+    }
+    .about-item-desription {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+     }
+    }
+      
+    @media screen and (min-width: 1200px) {
+    .advantages {
+        padding-bottom: 80px;
+    }
+    .about-list {
+        gap: 32px;
+    }
+    .about-item {
+        max-width: 368px;
+    }
+    .about-item:first-child:before, .about-item:nth-child(2):before,  .about-item:last-child:before  {
+        margin-bottom: 40px;
+    }
+    .about-item-title {
+        font-size: 58px;
+        line-height: 71px;
+    }
+    .about-item-desription {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+    }
+    }
