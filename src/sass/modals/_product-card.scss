@@ -41,7 +41,7 @@
   width: 224px;
   height: 32px;
   padding-left: 12px;
-  outline: transparent;
+  
   
 }
 .form-input::placeholder {
@@ -68,7 +68,7 @@ font-style: normal;
   width: 224px;
   padding-left: 12px;
   padding-top: 8px;
-   outline: transparent;
+   
    resize: none;
   
 }
@@ -109,6 +109,10 @@ font-style: normal;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
+.cream-check-box:hover,
+.cream-check-box:focus {
+  border: 4px solid #96AF8C;
+}
 .coffee-check-box{
   display: block;
   width: 132px;
@@ -121,6 +125,11 @@ font-style: normal;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
 
 }
+
+.coffee-check-box:hover,
+.coffee-check-box:focus {
+  border: 4px solid #EFD478;
+}
 .shake-check-box{
   display: block;
   width: 132px;
@@ -132,6 +141,10 @@ font-style: normal;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
 
+}
+.shake-check-box:hover,
+.shake-check-box:focus {
+  border: 4px solid #D6936D;
 }
 
 .form-button {
@@ -229,7 +242,7 @@ transition-property: background ;
 
 .textarea-form-field {
   position: relative;
-  margin-bottom: 26px;
+  margin-bottom: 36px;
 }
 
 .textarea-form-label {
