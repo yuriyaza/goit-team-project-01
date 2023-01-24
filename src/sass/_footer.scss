@@ -1,7 +1,28 @@
-// Приклад для CSS
-// Нижче добавляємо свої класи
+
 .footer {
     background-color: #84A178;
+}
+
+.social_media_mobile_footer_icon
+{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+         fill: #84A178;        
+        background-color: #F8D24E;        
+}
+.social_media_mobile_footer_icon:hover,
+.social_media_mobile_footer_icon:focus {
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        fill: #FCFCFC;        
+        transition: fill 250ms; 
 }
 
 @media screen and  (min-width: 320px) and (max-width:479px){
@@ -58,7 +79,7 @@
   margin-top: 20px;
   display: flex;
   justify-content: end;
-  gap: 1px;
+  
   margin-right: 20px;
   margin-bottom: 40px;
 }
@@ -150,7 +171,7 @@
   font-size: 12px;
   line-height: 1.8;
   color: #131313;
-  padding-right: 2px;
+  
 }
 .mobile_tel_footer {
   font-weight: 700;
