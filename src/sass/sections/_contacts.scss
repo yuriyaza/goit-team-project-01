@@ -9,15 +9,13 @@
 }
 .contacts-items {
   padding-top: 40px;
-  padding-bottom: 24px;
   background-color: var(--color-text-white);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-}
-.contacts-line {
-    border: 1px solid #E1E1E1;
-    margin-top: 24px;
-    margin-bottom: 24px;
+}  
+.phone-mail {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .city,
 .adress-cafe,
@@ -73,6 +71,7 @@
   background-color: var(--color-salt);
   border: 2px solid var(--color-button-yellow);
   border-radius: 10px;
+  transition: border var(--transition-rule-modal), color var(--transition-rule-modal);
 }
 .contacts-franchise:hover {
   border: 2px solid var(--color-button-green);
@@ -84,10 +83,16 @@
 .contacts-franchise:disabled {
   border: 2px solid var(--color-button-gray);
 }
-.icon {
-  fill: #000000;
+.phone,
+.mail {
+  transition: color var(--transition-rule-modal);
 }
-
+.phone:hover,
+.phone:focus,
+.mail:hover,
+.mail:focus {
+   color: var(--color-brown);
+}
 @media screen and (min-width: 320px) {
   .contacts-section {
     padding-top: 935px;
@@ -120,17 +125,26 @@
     color: var(--color-text-dark);
   }
   .city {
-    margin-top: 20px;
-    margin-bottom: 8px;
     min-width: 80px;
     min-height: 22px;
   }
   .phone {
     margin-bottom: 6px;
   } 
-}
-@media screen and (min-width: 480px) {
- 
+  .contacts-place,
+  .time-work {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+  }
+  .time-work {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .contacts-place {
+    padding-top: 20px;
+  }
 }
 @media screen and (max-width: 767px) {
   .contacts {
@@ -184,10 +198,16 @@
     padding-left: 24px;
     padding-right: 24px;
   }
-  .contacts-line {
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
+  .contacts-place,
+  .time-work {
+    padding-bottom: 32px;
+  }
+  .contacts-place {
+    padding-top: 30px;
+  }
+  .time-work {
+    padding-top: 32px;
+  }
   .city,
   .adress-cafe,
   .day,
@@ -197,13 +217,16 @@
     font-size: 14px;
   }
   .city {
-    margin-top: 32px;
     min-width: 73px;
     min-height: 30px;
   }
   .adress-cafe {
     max-width: 173px;
     max-height: 71px;
+  }
+  .phone-mail {
+    padding-top: 32px;
+    padding-bottom: 40px;
   }
   .phone {
     margin-bottom: 4px;
@@ -216,39 +239,39 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts-section {
-    padding-top: 474px;
-    padding-bottom: 60px;
+    .contacts-section {
+      padding-top: 474px;
+      padding-bottom: 60px;
+    }
+    .contacts {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      top: -128px;
+      gap: 32px;
+    }
+    .contacts-items {
+      flex-basis: calc((100% - 64px) / 3); 
+      width: 368px;
+      height: 542px;
+      top: -128px;
+      padding-left: 40px;
+      padding-right: 40px;
+      background: #FFFFFF;
+    } 
+    .city,
+    .adress-cafe,
+    .day,
+    .time,
+    .phone,
+    .mail {
+      font-size: 16px;
   }
-  .contacts {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: -128px;
-    gap: 32px;
-  }
-  .contacts-items {
-    flex-basis: calc((100% - 64px) / 3); 
-    width: 368px;
-    height: 542px;
-    top: -128px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background: #FFFFFF;
-  } 
-  .city,
-  .adress-cafe,
-  .day,
-  .time,
-  .phone,
-  .mail {
-    font-size: 16px;
+  .time-work {
+    gap: 12px;
   }
   .city {
     min-width: 76px;
-  }
-  .time {
-    margin-bottom: 12px;
   }
   .adress-cafe {
     min-width: 288px;
