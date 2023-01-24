@@ -1,13 +1,13 @@
 /******* загальні*******/
+
+
   .page-header {
    z-index: 50;
     padding-top: 12px;
-    padding-bottom: 12px;
     background-color:  #84A278; 
     position: fixed;
     width: 100%;
-
-
+    height: 98px;
    }
 
    .page-heder-container {
@@ -15,14 +15,20 @@
      align-items: flex-end;
      justify-content: space-between;
    }
+ 
    .logo-ice {
     display: block;
-    padding: 0;
     margin: 0;
-    line-height: 0;
+    padding: 0;
    }
-   
- 
+
+   .logo-ice-mob {
+    display: block;
+    width: 40px;
+    height: 37px;
+  
+   }
+
    .header-menu-open {
     background-color: transparent;
      border: none;
@@ -232,8 +238,10 @@
 
    /******* mobile-menu*******/
 
-
    @media screen and (min-width: 480px){
+
+
+
     .logo-ice-mob {
        width: 48px;
        height: 44px;
@@ -241,10 +249,9 @@
      }
    }
 
-
     /******* header desktop min-width:768 *******/
    
-   @media screen and (max-width:768px){   
+   @media screen and (max-width:767px){   
      .nav_bt-buy-now{
        display: none;
      } 
@@ -259,8 +266,9 @@
    
    @media screen and (min-width:768px) and (max-width:1200px){
      .page-header {
-       padding-top: 24px;
-       padding-bottom: 24px;
+      height: 80px;
+       padding-top: 22px;
+       
      }
      .header-nav-list {
        display: none;
@@ -280,8 +288,9 @@
    @media screen and (min-width:1200px){
    
      .page-header {
-       padding-top: 18px;
-       padding-bottom: 28px;
+      height: 118px;
+       padding-top: 15px;
+      
      }
    
      .header-menu-open {
