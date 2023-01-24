@@ -375,18 +375,15 @@
 .products-card-green {
   background-color: var(--color-light-salt);
   margin-bottom: 168px;
-
 }
 
 .products-card-yellow {
   background-color: var(--color-yellow);
   margin-bottom: 168px;
-
 }
 
 .products-card-orange {
   background-color: var(--color-brown);
-
 }
 
 .products-green::before,
@@ -402,11 +399,7 @@
   background-size: cover;
   background-position: center;
 }
-  
-  
-  
  
-
 
 @media (min-width: 480px){
   .products-section {
@@ -494,9 +487,6 @@
     left: calc((100% /2) - 20px);
   }
 }
-
-
-
 
 @media (min-width:1200px) {
   .products{
