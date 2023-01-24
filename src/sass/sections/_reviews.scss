@@ -34,6 +34,9 @@
   margin-bottom: 32px;
 }
 .reviews-text {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto 32px auto;
   background: #84A178;
   border-radius: 10px;
@@ -41,8 +44,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 255%;
-  text-align: center;
+  line-height: 255%;  
   color: #FCFCFC;  
 }
 .reviews-name {
