@@ -28,8 +28,7 @@
 
 .social_media_mobile_footer_icon
 {
-  
-  display: flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 34px;
@@ -41,7 +40,7 @@
 }
 .social_media_mobile_footer_icon:hover,
 .social_media_mobile_footer_icon:focus {
-  justify-content: center;
+        justify-content: center;
         align-items: center;
         width: 34px;
         height: 34px;
@@ -50,8 +49,8 @@
         fill: #FCFCFC;        
         transition: fill 250ms; 
 }
-
-@media screen and  (min-width: 320px) and (max-width:479px){
+@media screen and  (min-width: 320px) and (max-width:479px)
+   {
   .footer_ice_cream {
     display: none;
   }
