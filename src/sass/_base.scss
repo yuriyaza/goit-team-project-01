@@ -88,3 +88,33 @@ img {
     padding: 0 16px;
   }
 }
+
+section {
+  scroll-margin-top: 61px;
+}
+
+@media (min-width: 480px) {
+  section {
+    scroll-margin-top: 67px;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    scroll-margin-top: 91px;
+  }
+
+  .contacts-section {
+    scroll-margin-top: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section {
+    scroll-margin-top: 100px;
+  }
+
+  .contacts-section {
+    scroll-margin-top: 290px;
+  }
+}
