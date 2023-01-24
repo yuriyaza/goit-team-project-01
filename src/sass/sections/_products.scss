@@ -58,214 +58,7 @@
   }
 }
 
-
-
-.products-wraper-lab {
-  font-weight: 800;
-    font-size: 18px;
-    line-height: 1.2;
-    text-align: center;
-    text-transform: uppercase;
-    
-}
-
-.products-wraper-titl {
-  font-family: 'Seymour One';
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin-bottom: 145px;
-}
-  
-
-.products-card-titl {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-.products-card-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 176%;
-  text-align: center;
-  letter-spacing: 0.04em;
-  margin-bottom: 69px;
-}
-
-
-@media (min-width: 768px) {
-  .products-wraper-lab {
-    font-size: 22px;
-  }
-
-  .products-wraper-titl {
-    font-size: 34px;
-    line-height: 1.26;
-  }
-
-  .products-card-titl {
-    font-size: 22px;
-  }
-
-}
-
-@media (min-width: 1200px) {
-  .products-wraper-lab {
-    font-size: 30px;
-    letter-spacing: 0.04em;
-  }
-
-  .products-wraper-titl {
-    font-size: 36px;
-    letter-spacing: 0.06em;
-  }
-
-  .products-card-titl {
-    font-size: 30px;
-
-  }
-
-  .products-card-text {
-    font-size: 16px;
-
-  }
-}
-.products-wraper{
-  width: 100%;
-}
-
-.products-btm {
-  position: absolute;
-  cursor: pointer;
-  bottom: 24px;
-  left: 90px;
-  display: block;
-    margin: 0 auto;
-    border: none;
-    background-color: transparent;
-}
-.products-btm:hover,
-.products-btm:focus{
-  fill: var(--color-button-green)
-}
-.products {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
-.products-wraper {
-  padding: 60px 20px;
-}
-.products-inner {
-  display: block;
-
-}
-.products-card-yellow,
-.products-card-orange,
-.products-card-green {
-  position: relative;
-  max-width: 280px;
-  width: 100%;
-  padding: 123px 40px 24px;
-  border-radius: 24px;
-
-}
-
-.products-card-green {
-  background-color: var(--color-light-salt);
-  margin-bottom: 168px;
-
-}
-
-.products-card-yellow {
-  background-color: var(--color-yellow);
-  margin-bottom: 168px;
-
-}
-
-.products-card-orange {
-  background-color: var(--color-brown);
-
-}
-
-.products-green::before,
-.products-yellow::before,
-.products-orange::before {
-  content: "";
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  top: 0px;
-  left: 0px;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transform: translate(15%, -50%);
-  border-radius: 50%;
-}
-
-
-@media (min-width: 480px){
-  .products-wraper {
-      padding: 60px 80px;
-    }
-.products-card-yellow,
-.products-card-orange {
-  position: relative;
-  max-width: 320px;
-  width: 100%;
-
-  padding: 123px 60px 24px;
-  border-radius: 24px;
-
-}
-
-.products-card-green {
-  position: relative;
-  max-width: 320px;
-  width: 100%;
-  padding: 126px 60px 24px;
-  border-radius: 24px;
-}
-
-.products-card-green {
-  background-color: var(--color-light-salt);
-  margin-bottom: 168px;
-
-}
-
-.products-card-yellow {
-  background-color: var(--color-yellow);
-  margin-bottom: 168px;
-
-}
-
-.products-card-orange {
-  background-color: var(--color-brown);
-
-}
-.products-btm{
-  left:120px;
-}
-
-.products-green::before,
-.products-yellow::before,
-.products-orange::before {
-  content: "";
-  transform: translate(20%, -50%);
-  }
-}
- 
+// card picture
 @media (max-width: 480px) {
   .products-green::before {
     background-image: url("../../images/buy-now-modal-produkt-card/kelsey-curtis-min.png");
@@ -311,7 +104,7 @@
   }
 }
 
- 
+
 @media (min-width: 480px) {
   .products-green::before {
     background-image: url("../../images/buy-now-modal-produkt-card/kelsey-curtis-min.png");
@@ -406,40 +199,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .products-wraper {
-    padding: 60px 0;
-  }
-
-  .products-inner {
-    display: flex;
-    gap: 16px;
-    justify-content: space-between;
-  }
-
-  .products-card-green,
-  .products-card-yellow,
-  .products-card-orange {
-    max-width: 224px;
-    width: 100%;
-    padding: 108px 26px 20px;
-    margin-bottom: 0;
-  }
-
-  .products-green::before,
-  .products-yellow::before,
-  .products-orange::before {
-
-    transform: translate(5%, -50%);
-  }
-
-  .products-btm {
-    bottom: 20px;
-    left: 92px;
-  }
-}
-
-
 @media (min-width: 1200px) {
   .products-green::before {
     background-image: url("../../images/desktop/Products/kelsey-curtis-desk-min.png");
@@ -485,13 +244,257 @@
   }
 }
 
+
+.products-wraper-lab {
+  font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.products-wraper-titl {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 145px;
+}
+  
+
+.products-card-titl {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.products-card-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-bottom: 69px;
+}
+
+
+@media (min-width: 768px) {
+  .products-wraper-lab {
+    font-size: 22px;
+  }
+
+  .products-wraper-titl {
+    font-size: 34px;
+    line-height: 1.26;
+  }
+
+  .products-card-titl {
+    font-size: 22px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .products-wraper-lab {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+  }
+
+  .products-wraper-titl {
+    font-size: 36px;
+    letter-spacing: 0.06em;
+  }
+
+  .products-card-titl {
+    font-size: 30px;
+
+  }
+
+  .products-card-text {
+    font-size: 16px;
+
+  }
+}
+.products {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.products-section {
+  padding: 60px 20px;
+  width: 100%;
+}
+.products-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.products-btm {
+  position: absolute;
+  cursor: pointer;
+  bottom: 24px;
+  left: calc((100% /2) - 20px);
+  display: block;
+   
+    border: none;
+    background-color: transparent;
+}
+.products-btm:hover,
+.products-btm:focus{
+  fill: var(--color-button-green)
+}
+
+
+.products-card-yellow,
+.products-card-orange {
+  position: relative;
+  max-width: 280px;
+  width: 100%;
+  padding: 123px 40px 24px;
+  border-radius: 24px;
+
+}
+.products-card-green {
+  position: relative;
+  max-width: 280px;
+  width: 100%;
+  padding: 123px 40px 133px;
+  border-radius: 24px;
+
+}
+.products-card-green {
+  background-color: var(--color-light-salt);
+  margin-bottom: 168px;
+}
+
+.products-card-yellow {
+  background-color: var(--color-yellow);
+  margin-bottom: 168px;
+}
+
+.products-card-orange {
+  background-color: var(--color-brown);
+}
+
+.products-green::before,
+.products-yellow::before,
+.products-orange::before {
+  content: "";
+  width: 200px;
+  height: 211px;
+  top: 0px;
+  left: 0px;
+  transform: translate(12%, -50%);
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+}
+ 
+
+@media (min-width: 480px){
+  .products-section {
+      padding: 60px 80px;
+    }
+.products-card-yellow,
+.products-card-orange {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+
+  padding: 123px 60px 24px;
+  border-radius: 24px;
+
+}
+
+.products-card-green {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+  padding: 126px 60px 24px;
+  border-radius: 24px;
+}
+
+.products-card-green {
+  background-color: var(--color-light-salt);
+  margin-bottom: 168px;
+
+}
+
+.products-card-yellow {
+  background-color: var(--color-yellow);
+  margin-bottom: 168px;
+
+}
+
+.products-card-orange {
+  background-color: var(--color-brown);
+
+}
+.products-btm{
+  left: calc((100% /2) - 20px);
+}
+
+.products-green::before,
+.products-yellow::before,
+.products-orange::before {
+  content: "";
+  transform: translate(20%, -50%);
+  }
+}
+ 
+
+
+@media (min-width: 768px) {
+  .products-section {
+    padding: 60px 0;
+  }
+
+  .products-inner {
+   flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+   
+  }
+
+  .products-card-green,
+  .products-card-yellow,
+  .products-card-orange {
+    max-width: 224px;
+    width: 100%;
+    padding: 108px 26px 20px;
+    margin-bottom: 0;
+  }
+
+  .products-green::before,
+  .products-yellow::before,
+  .products-orange::before {
+
+    transform: translate(5%, -50%);
+  }
+
+  .products-btm {
+    bottom: 20px;
+    left: calc((100% /2) - 20px);
+  }
+}
+
 @media (min-width:1200px) {
   .products{
     background-repeat: repeat;
   }
   .products-btm {
     bottom: 67px;
-    left: 165px;
+    left: calc((100% /2) - 20px);
   }
 
   .products-card-yellow,
@@ -512,7 +515,7 @@
   .products-orange::before {
     display: block;
     width: 302px;
-    height: 302px;
+    height: 318px;
     top: 0;
     left: 0;
     transform: translate(12%, -50%);
