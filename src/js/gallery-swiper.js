@@ -1,11 +1,8 @@
 var swiper = new Swiper('.gallery-swiper', {
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
-  // grabCursor: true,
   direction: "vertical",
+  speed: 2000,
   slidesPerView: 1,
-  // spaceBetween: 30,
+  effect: "fade",
   mousewheel: true,
   autoplay: {
     delay: 5000,
