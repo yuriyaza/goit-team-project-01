@@ -2,7 +2,10 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
-
+  const menuAbout = document.querySelector('.menu-link-about');
+  const menuProducts = document.querySelector('.menu-link-products');
+  const menuContacts = document.querySelector('.menu-link-contacts');
+  
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -15,6 +18,9 @@
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
+  menuAbout.addEventListener('click', toggleMenu);
+  menuProducts.addEventListener('click', toggleMenu);
+  menuContacts.addEventListener('click', toggleMenu);
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
