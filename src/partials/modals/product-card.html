@@ -15,21 +15,21 @@
     <form class="form">
 <div class="product-card">
     <label class="check">
-      <div class="cream"></div>
+      <span class="cream"></span>
       <input type="checkbox" name="product" value="ice cream" class="check-input"  />
       <span class="cream-check-box"></span>
        <span class="cream-text">ICE CREAM</span>  
     </label> 
   
      <label class="check">
-      <div class="coffee"></div>
+      <span class="coffee"></span>
       <input type="checkbox" name="product" value="ice coffee" class="check-input"  />
       <span class="coffee-check-box"></span>
        <span class="coffee-text"> ICE COFFEE</span>  
      </label> 
   
      <label class="last-check">
-      <div class="milkshake"></div>
+      <span class="milkshake"></span>
       <input type="checkbox" name="product" value="milkshake" class="check-input"  />
       <span class="shake-check-box"></span>
       <span class="shake-text">MILKSHAKE</span>
@@ -38,16 +38,16 @@
     </div>
       <div class="form-field">
      <label for="name" class="form-label">  </label>
-     <input type="text" id="name" class="form-input" placeholder="Name" required pattern="[a-z]{1,15}">
+     <input type="text" id="product-card-name" class="form-input" placeholder="Name" required pattern="[a-z]{1,15}">
       </div>
 
      <div class="form-field">
      <label for="phone" class="form-label">  </label>
-     <input type="tel" id="phone" class="form-input" placeholder="Phone" required pattern="\+?[0-9\s\-\(\)]+">
+     <input type="tel" id="product-card-phone" class="form-input" placeholder="Phone" required pattern="\+?[0-9\s\-\(\)]+">
      </div>
      <div class="textarea-form-field">
      <label for="comment" class="textarea-form-label">  </label>
-     <textarea name="comment" id="comment"  rows="6" class="form-textarea" placeholder="Comment"></textarea>
+     <textarea name="comment" id="product-card-comment"  rows="6" class="form-textarea" placeholder="Comment"></textarea>
      </div>
      <button type="submit" class="form-button"> Submit</button>
     </form>
