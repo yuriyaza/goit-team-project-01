@@ -1,26 +1,45 @@
+.modal-franchise {
+  padding: 28px;
+}
+
+@media (min-width: 768px) {
+  .modal-franchise {
+    padding: 28px 56px;
+  }
+}
+
 .modal-franchise-title {
   margin-bottom: 20px;
   font-family: 'Seymour One';
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .modal-franchise-title {
+    margin: 0 auto 20px;
+    width: 322px;
+    font-size: 20px;
+  }
 }
 
 .modal-franchise-description {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   width: 100%;
   font-size: 14px;
   line-height: 1.4;
   text-align: left;
 }
 
-.modal-franchise-fieldset {
-  margin-bottom: 24px;
-  display: block;
-  width: 100%;
+@media (min-width: 768px) {
+  .modal-franchise-description {
+    font-size: 16px;
+  }
 }
 
 .modal-franchise-input,
 .modal-franchise-multyinput {
+  margin-bottom: 12px;
   width: 100%;
   padding: 8px 12px;
   background: rgba(248, 210, 78, 0.1);
@@ -28,15 +47,34 @@
   border-radius: 10px;
 }
 
+@media (min-width: 768px) {
+  .modal-franchise-input,
+  .modal-franchise-multyinput {
+    margin-bottom: 16px;
+    width: 368px;
+  }
+}
+
 .modal-franchise-multyinput {
+  margin-bottom: 24px;
   height: 64px;
   resize: none;
+}
+
+@media (min-width: 768px) {
+  .modal-franchise-multyinput {
+    margin-bottom: 32px;
+  }
 }
 
 .modal-franchise-input::placeholder,
 .modal-franchise-multyinput::placeholder {
   font-size: 12px;
   line-height: 1.4;
+}
+
+.modal-franchise-input:not(:placeholder-shown):required:invalid {
+  border-color: #ff0000;
 }
 
 .modal-franchise-button {

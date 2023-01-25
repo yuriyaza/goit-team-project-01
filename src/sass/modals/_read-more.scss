@@ -1,14 +1,44 @@
+.modal-more {
+  padding: 28px;
+}
+
+@media (min-width: 768px) {
+  .modal-more {
+    padding: 32px 60px;
+  }
+}
+
 .modal-more-title {
   margin-bottom: 20px;
   font-family: 'Seymour One';
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .modal-more-title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-more-title {
+    margin-bottom: 32px;
+  }
 }
 
 .modal-more-video {
-  margin-bottom: 20px;
-  width: 100%;
-  height: 200px;
+  margin-bottom: 24px;
+  width: 220px;
+  height: 199px;
+}
+
+@media (min-width: 768px) {
+  .modal-more-video {
+    margin-bottom: 32px;
+    width: 444px;
+    height: 205px;
+  }
 }
 
 .modal-more-description {
@@ -16,4 +46,11 @@
   font-size: 14px;
   line-height: 1.4;
   text-align: left;
+}
+
+@media (min-width: 768px) {
+  .modal-more-description {
+    font-size: 16px;
+    text-align: justify;
+  }
 }
