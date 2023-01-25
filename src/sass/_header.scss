@@ -60,7 +60,7 @@
     pointer-events: none;
     transform: translateX(100%);
     transition: var(--timing-function);
-    transition-property: transform;
+    
     transition-duration: .25s;
   
     @media screen  and (min-width: 1200px)  {
