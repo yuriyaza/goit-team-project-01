@@ -89,32 +89,33 @@ img {
   }
 }
 
-section {
-  scroll-margin-top: 61px;
+.products,
+.about {
+  scroll-margin-top: 98px;
 }
 
-@media (min-width: 480px) {
-  section {
-    scroll-margin-top: 67px;
-  }
+.contacts-section {
+  scroll-margin-top: 508px;
 }
 
 @media (min-width: 768px) {
-  section {
-    scroll-margin-top: 91px;
+  .products,
+  .about {
+    scroll-margin-top: 80px;
   }
 
   .contacts-section {
-    scroll-margin-top: 450px;
+    scroll-margin-top: 440px;
   }
 }
 
 @media (min-width: 1200px) {
-  section {
-    scroll-margin-top: 100px;
+  .products,
+  .about {
+    scroll-margin-top: 118px;
   }
 
   .contacts-section {
-    scroll-margin-top: 290px;
+    scroll-margin-top: 308px;
   }
 }
