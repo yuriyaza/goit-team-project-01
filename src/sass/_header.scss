@@ -8,6 +8,7 @@
     position: fixed;
     width: 100%;
     height: 98px;
+  
    }
 
    .page-heder-container {
@@ -51,7 +52,7 @@
      width: 100%;
      height: 100vh;
      overflow-y: auto;
-   
+
      background: #84A178;
 
      opacity: 0;
@@ -68,7 +69,7 @@
    }
    
    .header-menu.is-open {
-    opacity: 1;
+    opacity: 0.9;
     visibility: visible;
     pointer-events: auto;
     transform: translateX(0);
@@ -280,6 +281,12 @@
      .bt-buy-now-tablet {
        margin-left: 32px;
      }
+     .bt-buy-now-menu {
+      display: none;
+    }
+
+
+
    }
 
     /******* header desktop min-width:1200 *******/
