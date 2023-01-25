@@ -1,8 +1,4 @@
 /******* загальні*******/
-body {
-  height: 98px;
-}
-
 
   .page-header {
    z-index: 50;
@@ -12,6 +8,7 @@ body {
     position: fixed;
     width: 100%;
     opacity: 0.9;
+    height: 98px
    }
 
    .page-heder-container {
@@ -239,12 +236,11 @@ body {
    /******* mobile-menu*******/
 
    @media screen and (min-width: 480px){
-    body {
-      height: 80px;
-    }
+ 
     .page-header {
        padding-top: 6px; 
        padding-bottom: 14px;
+       height: 80px;
      }
 
     .logo-ice-mob { 
@@ -270,11 +266,9 @@ body {
    
    @media screen and (min-width:768px) and (max-width:1200px){
 
-    body {
-      height: 80px;
-    }
+ 
      .page-header {
-    
+      height: 80px;
        padding-top: 12px;
        padding-bottom: 20px;
        
@@ -301,12 +295,10 @@ body {
 
 
    @media screen and (min-width:1200px){
-    body {
-      height: 118px;
-    }
+   
    
      .page-header {
-      
+      height: 118px;
        padding-top: 8px;
       padding-bottom: 18px;
      }
