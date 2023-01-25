@@ -9,7 +9,7 @@
 .about-label, .about-title, .about-description {
   color: var(--color-text-white);
 }
-.about-container > label {
+.about-container > .about-label {
     text-align: center;
     display: block;
     margin-bottom: 12px;
@@ -110,7 +110,7 @@
   .about {
     padding-bottom: 40px;
   }
-  .about-container > label {
+  .about-container > .about-label {
     font-weight: 800;
     font-size: 22px;
     line-height: 27px;
@@ -185,7 +185,7 @@
   .about {
     padding-bottom: 106px;
   }
-  .about-container > label {
+  .about-container > .about-label {
     font-size: 30px;
     line-height: 37px;
   }
