@@ -89,33 +89,35 @@ img {
   }
 }
 
+// Розміри мінус 1px для виключення артефактів
+
 .products,
 .about {
-  scroll-margin-top: 98px;
+  scroll-margin-top: 97px;
 }
 
 .contacts-section {
-  scroll-margin-top: 508px;
+  scroll-margin-top: 507px;
 }
 
 @media (min-width: 768px) {
   .products,
   .about {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 79px;
   }
 
   .contacts-section {
-    scroll-margin-top: 440px;
+    scroll-margin-top: 439px;
   }
 }
 
 @media (min-width: 1200px) {
   .products,
   .about {
-    scroll-margin-top: 118px;
+    scroll-margin-top: 117px;
   }
 
   .contacts-section {
-    scroll-margin-top: 308px;
+    scroll-margin-top: 307px;
   }
 }
