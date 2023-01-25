@@ -15,7 +15,8 @@
         background-color: #F8D24E;        
 }
 .social_media_mobile_footer_icon:hover,
-.social_media_mobile_footer_icon:focus {
+.social_media_mobile_footer_icon:focus 
+{
         justify-content: center;
         align-items: center;
         width: 34px;
@@ -24,7 +25,8 @@
         fill: #FCFCFC;        
         transition: fill 250ms; 
 }
-.line_footer {
+.line_footer
+ {
   width: 280px;
   height: 42px;
   margin: 0 auto;
@@ -34,22 +36,24 @@
   text-align: center;
   justify-content: center;       
 }
-.underline {
+.underline 
+{
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   color: #7A7A7A;
  }
 
-@media screen and  (min-width: 320px) and (max-width:479px){
-  
-  .footer_tablet {
+@media screen and  (min-width: 320px) and (max-width:479px)
+{
+  .footer_tablet 
+  {
     display: none;
   }
-  .footer_desctop {
+  .footer_desctop 
+  {
     display: none;
   }
- 
   .footer_mobile_container
    {
     margin: 0 auto;
@@ -57,31 +61,30 @@
     min-width: 320px;
     height: 372px;
     background-color: transparent;
-    
-  }
+    }
   .footer_mobile_wrapper
    {
     margin-left: 20px;
     margin-right: 20px;   
     display: block;
     height: 290px;
-              
+          
   }
 .text 
 {
   width: 234px;
   height: 134px;
- 
-}
-.homemade {
+ }
+.homemade 
+{
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2;
   color: #FCFCFC;
   margin-bottom: 16px;
- 
-}
-.passion {
+ }
+.passion 
+{
   font-weight: 700;
   font-size: 34px;
   line-height: 1.2;
@@ -89,15 +92,16 @@
   color: #FCFCFC;
   
 }
-.social_media_mobile_footer_icons {
+.social_media_mobile_footer_icons 
+{
   margin-top: 60px;
   display: flex;
   justify-content: end;
   gap: 20px;
   
 }
-
-.mobile_contact_footer {
+.mobile_contact_footer 
+{
   margin-top: 20px;
   display: flex;
   justify-content: end;
@@ -116,11 +120,10 @@
   line-height: 1.8;
   color: #FCFCFC;
   } 
-    
-}
-@media screen and  (min-width: 480px) and (max-width:767px) {
- 
-  .footer_tablet {
+  }
+@media screen and  (min-width: 480px) and (max-width:767px) 
+{
+   .footer_tablet {
     display: none;
   }
   .footer_desctop {
@@ -163,31 +166,27 @@
   justify-content: end;
   gap: 20px;
 }
-
 .mobile_contact_footer {
   display: flex;
   justify-content: end;
   margin-top: 20;
-  
-}
+  }
 .mobile_ffc_footer {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.8;
   color: #131313;
-  
-}
+ }
 .mobile_tel_footer {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.8;
   color: #FCFCFC
 }
-
-
 }
 @media screen and  (min-width: 768px) and (max-width: 1199px) {
-  .footer_mobile {
+  .footer_mobile 
+  {
     display: none;
   }
   .footer_desctop {
@@ -202,9 +201,9 @@
     height: 203px;
     margin-left: 33px;
     margin-right: 32px;
-    
-  }
-.homemade {
+     }
+.homemade 
+{
   width: 352px;
   height: 57px;
   margin: 0;  
@@ -214,7 +213,8 @@
   color: #FCFCFC;
   margin-bottom: 8px;
 }
-.footer_wps {
+.footer_wps 
+{
   min-width: 703px;
   max-height: 118px;
   margin: 0;
@@ -223,8 +223,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
-  
-}
+ }
 .passion {
   width: 263px;
   height: 118px;
@@ -233,29 +232,33 @@
   line-height: 1.2;
   color: #FCFCFC;
 }
-.social_media_mobile_footer_icons {
+.social_media_mobile_footer_icons 
+{
   display: flex;
   justify-content: end;
   gap: 30px;
 }
-
-.mobile_contact_footer {
+.mobile_contact_footer 
+{
    padding-top: 34px;
 }
-.mobile_ffc_footer {
+.mobile_ffc_footer 
+{
   font-weight: 700;
   font-size: 12px;
   line-height: 1.8;
   color: #131313;
   padding-right: 2px;
 }
-.mobile_tel_footer {
+.mobile_tel_footer
+ {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.8;
   color: #FCFCFC
 }
-.line_footer {
+.line_footer
+ {
   margin: 0 auto;
   padding: 0 auto;
   min-width: 298px;
@@ -265,8 +268,7 @@
   align-items: center;
   text-align: center; 
   }
-  
-}
+  }
 @media screen and  (min-width: 1200px) {
   .footer_mobile {
     display: none;
@@ -294,7 +296,6 @@
     align-items: flex-end;
     margin-bottom: 60px;
   }
-
 .text {
   min-width: 504px;
   height: 122px;
@@ -319,29 +320,24 @@
   text-align: end;
   gap: 30px;
 }
-
 .mobile_contact_footer {
   display: flex;
   padding-top: 35;
-    
   }
 .mobile_ffc_footer {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   color: #131313;
-  
-}
+  }
 .mobile_tel_footer {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   color: #FCFCFC;
-  
 }
-
-.underline-desctop {
- 
+.underline-desctop 
+{
   font-weight: 700;
   font-size: 12px;
   line-height: 1.8;
@@ -349,7 +345,5 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  
-  
 }
 }
