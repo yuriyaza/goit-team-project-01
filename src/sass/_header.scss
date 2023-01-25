@@ -1,13 +1,15 @@
 /******* загальні*******/
-
+body {
+  height: 98px;
+}
 
   .page-header {
    z-index: 50;
-    padding-top: 12px;
+    padding-top: 2px;
+    padding-bottom: 12px;
     background-color:  #84A278; 
     position: fixed;
     width: 100%;
-    height: 98px;
     opacity: 0.9;
    }
 
@@ -25,8 +27,8 @@
 
    .logo-ice-mob {
     display: block;
-    width: 40px;
-    height: 37px;
+    width: 50px;
+    height: 44px;
   
    }
 
@@ -69,7 +71,7 @@
    }
    
    .header-menu.is-open {
-    opacity: 0.9;
+    opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transform: translateX(0);
@@ -98,11 +100,7 @@
        padding-right: 32px;
      }
    }
-      @media screen and (max-width:480px){
-      .item-none{
-        display: none;
-      }
-      }
+
 
    
     /******* header-mobile-menu*******/
@@ -240,13 +238,17 @@
    /******* mobile-menu*******/
 
    @media screen and (min-width: 480px){
+    body {
+      height: 80px;
+    }
+    .page-header {
+       padding-top: 6px; 
+       padding-bottom: 14px;
+     }
 
-
-
-    .logo-ice-mob {
-       width: 48px;
-       height: 44px;
- 
+    .logo-ice-mob { 
+       width: 56px;
+       height: 52px;
      }
    }
 
@@ -266,9 +268,14 @@
    }
    
    @media screen and (min-width:768px) and (max-width:1200px){
-     .page-header {
+
+    body {
       height: 80px;
-       padding-top: 22px;
+    }
+     .page-header {
+    
+       padding-top: 12px;
+       padding-bottom: 20px;
        
      }
      .header-nav-list {
@@ -293,11 +300,14 @@
 
 
    @media screen and (min-width:1200px){
+    body {
+      height: 118px;
+    }
    
      .page-header {
-      height: 118px;
-       padding-top: 15px;
       
+       padding-top: 8px;
+      padding-bottom: 18px;
      }
    
      .header-menu-open {
@@ -329,8 +339,8 @@
      }
 
      .logo-ice-mob {
-       width: 55px;
-       height: 55px;
+       width: 65px;
+       height: 65px;
      }
    }
    
