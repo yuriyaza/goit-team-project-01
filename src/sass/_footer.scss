@@ -66,7 +66,8 @@
    {
     margin-left: 20px;
     margin-right: 20px;   
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 290px;
           
   }
@@ -130,17 +131,16 @@
     display: none;
   }
   .footer_mobile_container {
-    padding-left: 0 auto;
-    padding-right: 0 auto;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
     min-width: 480px;
     height: 372px;   
     
   }
   .footer_mobile_wrapper {
-    display: block;
     margin-left: 20px;
     margin-right: 20px;   
-    min-width: 480px;
+    
     height: 286px;
     }
   .text {
